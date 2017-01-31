@@ -9,7 +9,8 @@ oeps:
     oep-2: True
     oep-3:
         state: False
-        reason: TODO - Implement for this application if appropriate
+        reason: Not relevant to this app
     oep-5:
         state: False
-        reason: TODO - Implement for this application if appropriate
+        reason: Not relevant to this app
+    oep-7: True

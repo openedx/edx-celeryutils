@@ -4,8 +4,15 @@
 #
 #    pip-compile --output-file requirements/test.txt requirements/base.in requirements/test.in
 #
+amqp==2.1.4               # via kombu
 appdirs==1.4.0            # via setuptools
+billiard==3.5.0.2         # via celery
+celery==4.0.2
 coverage==4.3.4           # via pytest-cov
+ddt==1.1.1
+django-model-utils==2.6.1
+jsonfield==1.0.3
+kombu==4.0.2              # via celery
 packaging==16.8           # via setuptools
 py==1.4.32                # via pytest, pytest-catchlog
 pyparsing==2.1.10         # via packaging
@@ -13,7 +20,11 @@ pytest-catchlog==1.2.2
 pytest-cov==2.4.0
 pytest-django==3.1.2
 pytest==3.0.6             # via pytest-catchlog, pytest-cov, pytest-django
-six==1.10.0               # via packaging, setuptools
+python-memcached==1.58
+pytz==2016.10             # via celery
+six==1.10.0               # via packaging, python-memcached, setuptools
+vine==1.1.3               # via amqp
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools                # via pytest
+mock

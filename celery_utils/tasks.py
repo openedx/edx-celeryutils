@@ -1,0 +1,20 @@
+"""
+Celery tasks that support the utils in this module.
+"""
+
+from __future__ import absolute_import, division, print_function, unicode_literals
+
+from celery import shared_task
+from django.utils.timezone import now
+
+
+@shared_task
+def mark_resolved(task_id):
+    """
+    Mark the specified task as resolved in the FailedTask table.
+
+    If more than one record exists with the specified task id, they will all be
+    marked resolved.
+    """
+    from . import models
+    models.FailedTask.objects.filter(task_id=task_id, datetime_resolved=None).update(datetime_resolved=now())

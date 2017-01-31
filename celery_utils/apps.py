@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-celeryutils Django application initialization.
+celery_utils Django application initialization.
 """
 
 from __future__ import absolute_import, unicode_literals
@@ -10,7 +10,7 @@ from django.apps import AppConfig
 
 class CeleryUtilsConfig(AppConfig):
     """
-    Configuration for the celeryutils Django application.
+    Configuration for the celery_utils Django application.
     """
 
-    name = 'celeryutils'
+    name = 'celery_utils'

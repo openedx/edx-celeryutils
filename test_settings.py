@@ -17,6 +17,8 @@ def root(*args):
     return join(abspath(dirname(__file__)), *args)
 
 
+DEBUG = True
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -31,13 +33,20 @@ DATABASES = {
 INSTALLED_APPS = (
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    'celeryutils',
+    'celery_utils',
+    'test_utils',
 )
 
 LOCALE_PATHS = [
-    root('celeryutils', 'conf', 'locale'),
+    root('celery_utils', 'conf', 'locale'),
 ]
 
-ROOT_URLCONF = 'celeryutils.urls'
+ROOT_URLCONF = 'urls'
 
 SECRET_KEY = 'insecure-secret-key'
+
+# Celery settings
+
+BROKER_URL = 'memory://'
+CELERY_ALWAYS_EAGER = True
+CELERY_RESULT_BACKEND = 'cache+memcached://127.0.0.1:11211/'
