@@ -4,7 +4,7 @@ Tasks used in tests
 
 from __future__ import absolute_import, division, print_function, unicode_literals
 
-from celery_utils import persist_on_failure
+from celery_utils import logged_task, persist_on_failure
 
 from .celery import app
 
@@ -24,3 +24,11 @@ def passing_task():
     This task always passes
     """
     return 5
+
+
+@app.task(base=logged_task.LoggedTask)
+def simple_logged_task(a, b, c):  # pylint: disable=invalid-name
+    """
+    This task gets logged
+    """
+    return a + b + c
