@@ -44,6 +44,11 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 	pip-compile --upgrade -o requirements/quality.txt requirements/quality.in
 	pip-compile --upgrade -o requirements/test.txt requirements/base.in requirements/test.in
 	pip-compile --upgrade -o requirements/travis.txt requirements/travis.in
+	# Workaround for packages that break pip-tools due to python version specifiers somewhere upstream
+	# See https://github.com/nvie/pip-tools/issues/206
+	cat requirements/dev-extra.txt >> requirements/dev.txt
+	cat requirements/quality-extra.txt >> requirements/quality.txt
+	cat requirements/test-extra.txt >> requirements/test.txt
 	# Let tox control the Django version for tests
 	sed '/Django==/d' requirements/test.txt > requirements/test.tmp
 	mv requirements/test.tmp requirements/test.txt
@@ -87,7 +92,7 @@ push_translations: ## push source translation files (.po) from Transifex
 	tx push -s
 
 dummy_translations: ## generate dummy translation (.po) files
-	cd celeryutils && i18n_tool dummy
+	cd celery_utils && i18n_tool dummy
 
 build_dummy_translations: extract_translations dummy_translations compile_translations ## generate and compile dummy translation files
 

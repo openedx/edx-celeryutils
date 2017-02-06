@@ -23,7 +23,7 @@ def get_version(*file_paths):
     raise RuntimeError('Unable to find version string.')
 
 
-VERSION = get_version('celeryutils', '__init__.py')
+VERSION = get_version('celery_utils', '__init__.py')
 
 if sys.argv[-1] == 'tag':
     print("Tagging the version on github:")
@@ -43,11 +43,14 @@ setup(
     author_email='oscm@edx.org',
     url='https://github.com/edx/edx-celeryutils',
     packages=[
-        'celeryutils',
+        'celery_utils',
     ],
     include_package_data=True,
     install_requires=[
-        "Django>=1.8,<1.11"
+        "celery>=3.1,<5.0",
+        "Django>=1.8,<1.11",
+        "django-model-utils",
+        "jsonfield",
     ],
     license="AGPL 3.0",
     zip_safe=False,
