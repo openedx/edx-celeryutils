@@ -18,4 +18,5 @@ class FailedTaskAdmin(admin.ModelAdmin):
     list_filter = ['task_name']
     search_fields = ['task_name', 'task_id', 'args', 'kwargs']
 
+
 admin.site.register(FailedTask, FailedTaskAdmin)
