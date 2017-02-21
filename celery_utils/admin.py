@@ -1,5 +1,5 @@
 """
-Admin site configuration
+Admin site configuration.
 """
 
 from __future__ import absolute_import, division, print_function, unicode_literals
@@ -11,7 +11,7 @@ from .models import FailedTask
 
 class FailedTaskAdmin(admin.ModelAdmin):
     """
-    Customized admin for FailedTask model
+    Customized admin for the FailedTask model.
     """
     date_hierarchy = 'created'
     list_display = ['task_id', 'task_name', 'args', 'kwargs', 'created', 'datetime_resolved']
