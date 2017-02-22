@@ -14,9 +14,8 @@ class FailedTaskAdmin(admin.ModelAdmin):
     Customized admin for the FailedTask model.
     """
 
-    date_hierarchy = 'created'
     list_display = ['task_id', 'task_name', 'args', 'kwargs', 'created', 'datetime_resolved']
-    list_filter = ['task_name']
+    list_filter = ['task_name', 'created', 'datetime_resolved']
     search_fields = ['task_name', 'task_id', 'args', 'kwargs']
 
 
