@@ -17,8 +17,6 @@ def root(*args):
     return join(abspath(dirname(__file__)), *args)
 
 
-DEBUG = True
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -30,9 +28,15 @@ DATABASES = {
     }
 }
 
+DEBUG = True
+
 INSTALLED_APPS = (
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.messages',
+    'django.contrib.sessions',
+    'django.contrib.staticfiles',
     'celery_utils',
     'test_utils',
 )
@@ -41,9 +45,31 @@ LOCALE_PATHS = [
     root('celery_utils', 'conf', 'locale'),
 ]
 
+MIDDLEWARE = [
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+]
+
 ROOT_URLCONF = 'urls'
 
 SECRET_KEY = 'insecure-secret-key'
+
+STATIC_URL = '/static/'
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ]
+        }
+    }
+]
+
 
 # Celery settings
 
