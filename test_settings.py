@@ -31,11 +31,34 @@ DATABASES = {
 }
 
 INSTALLED_APPS = (
+    'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
+    'django.contrib.messages',
+    'django.contrib.sessions',
+    'django.contrib.staticfiles',
     'celery_utils',
     'test_utils',
 )
+
+MIDDLEWARE = [
+    'django.contrib.sessions.middleware.SessionMiddleware',
+    'django.contrib.auth.middleware.AuthenticationMiddleware',
+    'django.contrib.messages.middleware.MessageMiddleware',
+]
+
+TEMPLATES = [
+    {
+        'BACKEND': 'django.template.backends.django.DjangoTemplates',
+        'APP_DIRS': True,
+        'OPTIONS': {
+            'context_processors': [
+                'django.contrib.auth.context_processors.auth',
+                'django.contrib.messages.context_processors.messages',
+            ]
+        }
+    }
+]
 
 LOCALE_PATHS = [
     root('celery_utils', 'conf', 'locale'),
@@ -45,6 +68,8 @@ ROOT_URLCONF = 'urls'
 
 SECRET_KEY = 'insecure-secret-key'
 
+#STATIC_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '/static/')
+STATIC_URL = '/static/'
 # Celery settings
 
 BROKER_URL = 'memory://'
