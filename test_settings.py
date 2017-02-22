@@ -17,8 +17,6 @@ def root(*args):
     return join(abspath(dirname(__file__)), *args)
 
 
-DEBUG = True
-
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
@@ -29,6 +27,8 @@ DATABASES = {
         'PORT': '',
     }
 }
+
+DEBUG = True
 
 INSTALLED_APPS = (
     'django.contrib.admin',
@@ -41,11 +41,21 @@ INSTALLED_APPS = (
     'test_utils',
 )
 
+LOCALE_PATHS = [
+    root('celery_utils', 'conf', 'locale'),
+]
+
 MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
 ]
+
+ROOT_URLCONF = 'urls'
+
+SECRET_KEY = 'insecure-secret-key'
+
+STATIC_URL = '/static/'
 
 TEMPLATES = [
     {
@@ -60,16 +70,7 @@ TEMPLATES = [
     }
 ]
 
-LOCALE_PATHS = [
-    root('celery_utils', 'conf', 'locale'),
-]
 
-ROOT_URLCONF = 'urls'
-
-SECRET_KEY = 'insecure-secret-key'
-
-#STATIC_ROOT = os.path.join(os.path.abspath(os.path.dirname(__file__)), '/static/')
-STATIC_URL = '/static/'
 # Celery settings
 
 BROKER_URL = 'memory://'
