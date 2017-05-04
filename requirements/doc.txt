@@ -4,34 +4,45 @@
 #
 #    pip-compile --output-file requirements/doc.txt requirements/base.in requirements/doc.in
 #
-alabaster==0.7.9          # via sphinx
-amqp==2.1.4               # via kombu
-babel==2.3.4              # via sphinx
-billiard==3.5.0.2         # via celery
-bleach==1.5.0             # via readme-renderer
-celery==4.0.2
-chardet==2.3.0            # via doc8
-django-model-utils==2.6.1
-Django==1.10.5            # via django-model-utils, jsonfield
-doc8==0.7.0
+alabaster==0.7.10         # via sphinx
+amqp==1.4.9               # via kombu
+anyjson==0.3.3            # via kombu
+appdirs==1.4.3            # via setuptools
+babel==2.4.0              # via sphinx
+billiard==3.3.0.23        # via celery
+bleach==2.0.0             # via readme-renderer
+celery==3.1.25
+chardet==3.0.3            # via doc8
+django-celery==3.2.1
+django-model-utils==3.0.0
+Django==1.11.1            # via django-celery, django-model-utils, jsonfield
+doc8==0.8.0
 docutils==0.13.1          # via doc8, readme-renderer, restructuredtext-lint, sphinx
 edx-sphinx-theme==1.0.2
-html5lib==0.9999999       # via bleach
+future==0.16.0
+html5lib==0.999999999     # via bleach
 imagesize==0.7.1          # via sphinx
-Jinja2==2.9.5             # via sphinx
-jsonfield==1.0.3
-kombu==4.0.2              # via celery
-MarkupSafe==0.23          # via jinja2
-pbr==1.10.0               # via stevedore
-pockets==0.3.1            # via sphinxcontrib-napoleon
+Jinja2==2.9.6             # via sphinx
+jsonfield==2.0.1
+kombu==3.0.37             # via celery
+MarkupSafe==1.0           # via jinja2
+packaging==16.8           # via setuptools
+pbr==3.0.1                # via stevedore
+pockets==0.5.1            # via sphinxcontrib-napoleon
 Pygments==2.2.0           # via readme-renderer, sphinx
-pytz==2016.10             # via babel, celery
-readme-renderer==16.0
-requests==2.13.0          # via sphinx
-restructuredtext-lint==0.17.2  # via doc8
-six==1.10.0               # via bleach, doc8, edx-sphinx-theme, html5lib, pockets, readme-renderer, sphinx, sphinxcontrib-napoleon, stevedore
+pyparsing==2.2.0          # via packaging
+pytz==2017.2              # via babel, celery, django
+readme-renderer==17.2
+requests==2.14.2          # via sphinx
+restructuredtext-lint==1.0.1  # via doc8
+six==1.10.0               # via bleach, doc8, edx-sphinx-theme, html5lib, packaging, pockets, readme-renderer, setuptools, sphinx, sphinxcontrib-napoleon, stevedore
 snowballstemmer==1.2.1    # via sphinx
-Sphinx==1.5.2             # via edx-sphinx-theme
-sphinxcontrib-napoleon==0.6.0
-stevedore==1.20.0         # via doc8
-vine==1.1.3               # via amqp
+Sphinx==1.6.1             # via edx-sphinx-theme
+sphinxcontrib-napoleon==0.6.1
+sphinxcontrib-websupport==1.0.1  # via sphinx
+stevedore==1.21.0         # via doc8
+typing==3.6.1             # via sphinx
+webencodings==0.5.1       # via html5lib
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools                # via html5lib, sphinx
