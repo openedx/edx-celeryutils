@@ -4,9 +4,8 @@ python:
 - 3.5
 env:
 - TOXENV=django18-celery3
-- TOXENV=django18-celery4
-- TOXENV=django19-celery4
-- TOXENV=django110-celery4
+- TOXENV=django19-celery3
+- TOXENV=django110-celery3
 matrix:
   include:
   - python: 3.5

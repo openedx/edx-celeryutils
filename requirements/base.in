@@ -1,6 +1,8 @@
 # Core requirements for using this application
 
-celery >= 3.1,<5.0
+celery >= 3.1,<4.0
 Django                    # Web application framework
+django-celery==3.2.1
 django-model-utils
+future
 jsonfield

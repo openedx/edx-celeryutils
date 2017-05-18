@@ -61,7 +61,7 @@ requirements: ## install development environment requirements
 	pip-sync requirements/base.txt requirements/dev.txt requirements/private.* requirements/test.txt
 
 test: clean ## run tests in the current virtualenv
-	py.test
+	py.test tests/ celery_utils/
 
 diff_cover: test
 	diff-cover coverage.xml
