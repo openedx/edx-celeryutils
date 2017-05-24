@@ -50,7 +50,7 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 	cat requirements/quality-extra.txt >> requirements/quality.txt
 	cat requirements/test-extra.txt >> requirements/test.txt
 	# Let tox control the Django version for tests
-	sed '/Django==/d' requirements/test.txt > requirements/test.tmp
+	sed '/^[Dd]jango==/d' requirements/test.txt > requirements/test.tmp
 	mv requirements/test.tmp requirements/test.txt
 
 quality: ## check coding style with pycodestyle and pylint

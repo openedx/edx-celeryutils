@@ -47,8 +47,9 @@ setup(
     ],
     include_package_data=True,
     install_requires=[
-        "celery>=3.1.25,<4.0",
+        "celery>=3.1,<4.0",
         "Django>=1.8,<1.11",
+        "django-celery>=3.2.1",
         "django-model-utils",
         "jsonfield",
     ],
