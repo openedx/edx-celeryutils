@@ -10,3 +10,6 @@ coverage:
         target: 100%
 
 comment: false
+
+ignore:
+ - "celery_utils/management/commands/drop_djcelery_tables.py"
