@@ -20,7 +20,7 @@ class LoggedTask(Task):
 
     abstract = True
 
-    def apply_async(self, args=None, kwargs=None, **options):
+    def apply_async(self, args=None, kwargs=None, **options):  # pylint: disable=arguments-differ
         """
         Emit a log statement when the task is submitted.
         """
