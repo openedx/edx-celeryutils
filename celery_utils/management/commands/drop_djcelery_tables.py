@@ -10,11 +10,11 @@ from collections import OrderedDict
 import logging
 from textwrap import dedent
 
-from django.core.management.base import BaseCommand
-from django.db import connection
-
 from djcelery.models import (CrontabSchedule, IntervalSchedule, PeriodicTask,  # pylint:disable=import-error
                              PeriodicTasks, TaskMeta, TaskSetMeta, TaskState, WorkerState)
+
+from django.core.management.base import BaseCommand
+from django.db import connection
 
 log = logging.getLogger(__name__)
 
