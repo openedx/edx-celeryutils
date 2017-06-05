@@ -19,16 +19,16 @@ from djcelery.models import (CrontabSchedule, IntervalSchedule, PeriodicTask,  #
 log = logging.getLogger(__name__)
 
 DJCELERY_MODEL_TABLES = OrderedDict({
-    PeriodicTask: '\"djcelery_periodictask\"',  # must be before crontab, interval
-    TaskState: '\"djcelery_taskstate\"',  # must be before workerstate
+    PeriodicTask: '`djcelery_periodictask`',  # must be before crontab, interval
+    TaskState: '`djcelery_taskstate`',  # must be before workerstate
 })
 DJCELERY_MODEL_TABLES.update({
-    CrontabSchedule: '\"djcelery_crontabschedule\"',
-    IntervalSchedule: '\"djcelery_intervalschedule\"',
-    PeriodicTasks: '\"djcelery_periodictasks\"',
-    WorkerState: '\"djcelery_workerstate\"',
-    TaskSetMeta: '\"celery_tasksetmeta\"',
-    TaskMeta: '\"celery_taskmeta\"',
+    CrontabSchedule: '`djcelery_crontabschedule`',
+    IntervalSchedule: '`djcelery_intervalschedule`',
+    PeriodicTasks: '`djcelery_periodictasks`',
+    WorkerState: '`djcelery_workerstate`',
+    TaskSetMeta: '`celery_tasksetmeta`',
+    TaskMeta: '`celery_taskmeta`',
 })
 
 
