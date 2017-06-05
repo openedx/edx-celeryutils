@@ -12,7 +12,6 @@ import pytest
 import six
 
 from celery_utils.models import FailedTask
-
 from test_utils import tasks
 
 

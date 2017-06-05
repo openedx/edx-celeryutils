@@ -8,7 +8,6 @@ import logging
 
 from celery import Task
 
-
 log = logging.getLogger(__name__)
 
 
