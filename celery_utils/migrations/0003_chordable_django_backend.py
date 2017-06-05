@@ -7,8 +7,8 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
+        ('celery_utils', '0002_djcelery_cleanup'),
         ('djcelery', '0001_initial'),
-        ('celery_utils', '0001_initial'),
     ]
 
     operations = [
