@@ -18,6 +18,7 @@ from djcelery.models import TaskMeta
 
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
+from djcelery.models import TaskMeta
 
 from jsonfield import JSONField
 from model_utils.models import TimeStampedModel
@@ -25,6 +26,42 @@ from model_utils.models import TimeStampedModel
 from celery_utils import tasks
 
 log = logging.getLogger(__name__)
+
+
+class TaskCounter(models.Model):
+    """
+    A naive model to track subtask completion.
+    """
+    expected = models.IntegerField(default=0)
+    completed_subtasks = models.ManyToManyField(TaskMeta)
+    locked = models.BooleanField(default=True)  # prevent callback until all subtasks have spawned
+
+    @classmethod
+    def update(cls, _id, task):
+        counter = cls.objects.select_for_update().get(id=_id)
+        counter.completed_subtasks.add(task)
+        counter.save()
+
+    @classmethod
+    def is_finished(cls, _id):
+        counter = cls.objects.get(id=_id)
+        return (
+            not counter.locked and
+            counter.completed_subtasks.filter(state='SUCCESS').count() >= counter.expected
+        )
+
+    @classmethod
+    def results_itr(cls, _id):
+        counter = cls.objects.get(id=_id)
+        for subtask in counter.completed_subtasks:
+            yield subtask.result
+
+    @classmethod
+    def cleanup_after_callback(cls, _id):
+        counter = cls.objects.get(id=_id)
+        for subtask in counter.completed_subtasks:
+            subtask.delete()
+        counter.delete()
 
 
 @python_2_unicode_compatible
