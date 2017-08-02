@@ -66,8 +66,8 @@ import json
 from celery import chord as _chord
 from celery import current_app, task
 from celery.states import FAILURE, SUCCESS
-from djcelery.backends.database import DatabaseBackend
-from djcelery.models import TaskMeta
+from django_celery_results.backends.database import DatabaseBackend
+from django_celery_results.models import TaskResult
 
 from django.db import transaction
 
@@ -128,7 +128,7 @@ class ChordableDjangoBackend(DatabaseBackend):
         for _chord in chords_to_delete:
             subtask_ids = [subtask.task_id for subtask in _chord.completed_results.all()]
             _chord.completed_results.clear()
-            TaskMeta.objects.filter(task_id__in=subtask_ids).delete()
+            TaskResult.objects.filter(task_id__in=subtask_ids).delete()
             _chord.callback_result.delete()
             _chord.delete()
 
@@ -166,7 +166,7 @@ class ChordableDjangoBackend(DatabaseBackend):
             chord_data = ChordData.objects.select_for_update().get(  # select_for_update will prevent race conditions
                 callback_result__task_id=task.request.chord[u'options'][u'task_id']
             )
-            _ = TaskMeta.objects.update_or_create(
+            _ = TaskResult.objects.update_or_create(
                 task_id=task.request.id,
                 defaults={
                     u'status': state,
@@ -188,17 +188,17 @@ class ChordableDjangoBackend(DatabaseBackend):
                 different-per-instance arguments already set.
             partial_args: list of same-per-instance subtask arguments.
             group_id: a uuid that proved unnecessary in our approach. We use
-                the callback's frozen TaskMeta id as a linking piece of data.
+                the callback's frozen TaskResult id as a linking piece of data.
             body: the callback task signature, with all non-subtask-dependent
                 arguments already set.
 
         Return value is the (unfinished) AsyncResult for body.
 
         """
-        callback_entry = TaskMeta.objects.create(task_id=body.id)
+        callback_entry = TaskResult.objects.create(task_id=body.id)
         chord_data = ChordData.objects.create(callback_result=callback_entry)
         for subtask in header:
-            subtask_entry = TaskMeta.objects.create(task_id=subtask.id)
+            subtask_entry = TaskResult.objects.create(task_id=subtask.id)
             chord_data.completed_results.add(subtask_entry)
         if body.options.get(u'use_iterator', None) is None:
             body.options[u'use_iterator'] = True

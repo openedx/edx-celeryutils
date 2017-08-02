@@ -15,7 +15,7 @@ from datetime import datetime, timedelta
 from celery import current_app
 from celery.exceptions import ChordError
 from celery.states import FAILURE, PENDING, SUCCESS
-from djcelery.models import TaskMeta
+from django_celery_results.models import TaskResult
 from freezegun import freeze_time
 from mock import MagicMock, patch
 import pytest
@@ -184,7 +184,7 @@ def _test_chord_internal(callback_signature, failing_subtasks=False):
     test_chord = chord(chord_subtask.s(i) for i in _range(10))(callback_signature)
 
     # We now have several "tasks queued for execution" that will never be executed.
-    assert TaskMeta.objects.all().count() == 11  # 10 subtasks, 1 callback
+    assert TaskResult.objects.all().count() == 11  # 10 subtasks, 1 callback
 
     chord_data = ChordData.objects.filter(callback_result__task_id=test_chord.id).first()
     for i, subtask in enumerate(chord_data.completed_results.all()):
@@ -222,11 +222,11 @@ def _test_cleanup(failures=False):
 
     with freeze_time(datetime.now() + timedelta(days=8)):
         cleanup.apply()
-    assert TaskMeta.objects.all().count() == (11 if failures else 0)
+    assert TaskResult.objects.all().count() == (11 if failures else 0)
     assert ChordData.objects.all().count() == (1 if failures else 0)
 
     # after 70 days we'll clean up failures too
     with freeze_time(datetime.now() + timedelta(days=71)):
         cleanup.apply()
-    assert TaskMeta.objects.all().count() == 0
+    assert TaskResult.objects.all().count() == 0
     assert ChordData.objects.all().count() == 0

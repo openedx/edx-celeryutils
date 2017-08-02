@@ -3,6 +3,26 @@ This command will drop the tables included in django-celery's
 migrations, which are included when we bump that to 3.2.1
 
 If the tables are not empty, this command will show a message and exit.
+
+Once the platform is upgraded to Celery 4, this command will no longer be needed
+but will be kept around for instances that might need to use it.
+
+The original problem explanation:
+edX recently did some work on edx-celeryutils, allowing the celery chord primitive
+to be used to speed up future grade report execution times. As part of this work,
+the django-celery requirement needed an upgrade from 3.1.16 to 3.2.1.
+This upgrade raised a problem: the project moved from South to Django migrations
+over this version, and a simple --fake-initial didn’t resolve the problem due to
+the old and new tables being slightly different.
+
+However, the platform used the old tables in no locations. The fix is to run this
+management command, drop_djcelery_tables. This command will drop the relevant database
+tables (iff they are empty), allowing you to grab the newly-merged-into-master
+celeryutils migrations and run them.
+
+If you haven’t run the management command yet but have tried to run migrations,
+you’ll get a “table already exists” error. The fix is easy - just run this management command
+and try to run your migrations again.
 """
 from __future__ import absolute_import, division, print_function, unicode_literals
 

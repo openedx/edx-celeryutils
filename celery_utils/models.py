@@ -14,7 +14,7 @@ from celery import current_app
 from celery.canvas import Signature
 from celery.exceptions import ChordError
 from celery.states import FAILURE, READY_STATES, SUCCESS
-from djcelery.models import TaskMeta
+from django_celery_results.models import TaskResult
 
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
@@ -78,9 +78,9 @@ class ChordData(models.Model):
     these models at all, they're designed to be used under the covers.
     """
 
-    completed_results = models.ManyToManyField(TaskMeta, related_name='chorddata_sub_results')
+    completed_results = models.ManyToManyField(TaskResult, related_name='chorddata_sub_results')
     serialized_callback = models.TextField()  # A frozen, serialized callback signature
-    callback_result = models.OneToOneField(TaskMeta, related_name='chorddata_callback_result')
+    callback_result = models.OneToOneField(TaskResult, related_name='chorddata_callback_result')
 
     def __str__(self):
         return "{} depends on {} subtasks, status {}".format(
