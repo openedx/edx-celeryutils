@@ -48,7 +48,7 @@ setup(
     include_package_data=True,
     install_requires=[
         "celery>=3.1.25,<4.0",
-        "Django>=1.8,<1.11",
+        "Django>=1.8,<2.0",
         "django-model-utils",
         "jsonfield",
     ],
@@ -61,6 +61,7 @@ setup(
         'Framework :: Django :: 1.8',
         'Framework :: Django :: 1.9',
         'Framework :: Django :: 1.10',
+        'Framework :: Django :: 1.11',
         'Intended Audience :: Developers',
         'License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)',
         'Natural Language :: English',
