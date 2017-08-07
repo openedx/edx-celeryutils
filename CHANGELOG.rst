@@ -2,7 +2,7 @@ Change Log
 ----------
 
 ..
-   All enhancements and patches to cookiecutter-django-app will be documented
+   All enhancements and patches to edx-celeryutils will be documented
    in this file.  It adheres to the structure of http://keepachangelog.com/ ,
    but in reStructuredText instead of Markdown (for ease of incorporation into
    Sphinx documentation and the PyPI description).
@@ -17,6 +17,31 @@ Unreleased
 
 Added
 _____
+
+[0.2.6] - 2017-08-07
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Upgrade version of django-celery.
+
+[0.2.5] - 2017-08-03
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Django 1.11 compatibility
+
+[0.2.4] - 2017-06-20
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Add management command to fix djcelery tables.
+
+[0.2.1] - 2017-05-22
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Add ChordableDjangoBackend and testing.
+
+[0.1.3] - 2017-03-01
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* Packaging changes.
 
 [0.1.1] - 2017-02-22
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -4,47 +4,46 @@
 #
 #    pip-compile --output-file requirements/dev.txt requirements/dev.in requirements/quality.in
 #
-appdirs==1.4.3            # via setuptools
 argparse==1.4.0           # via caniusepython3
-args==0.1.0               # via clint
 backports.functools-lru-cache==1.4  # via caniusepython3
 caniusepython3==5.0.0
+certifi==2017.7.27.1      # via requests
+chardet==3.0.4            # via requests
 click==6.7                # via pip-tools
-clint==0.5.1              # via twine
-diff-cover==0.9.11
+diff-cover==0.9.12
 distlib==0.2.5            # via caniusepython3
-django==1.10.7            # via edx-i18n-tools
-edx-i18n-tools==0.3.7
+django==1.11.4            # via edx-i18n-tools
+edx-i18n-tools==0.3.9
 first==2.0.1              # via pip-tools
 futures==3.1.1            # via caniusepython3
+idna==2.5                 # via requests
 inflect==0.2.5            # via jinja2-pluralize
-isort==4.2.5
+isort==4.2.15
 jinja2-pluralize==0.3.0   # via diff-cover
-Jinja2==2.9.6             # via diff-cover, jinja2-pluralize
-MarkupSafe==1.0           # via jinja2
-packaging==16.8           # via caniusepython3, setuptools
+jinja2==2.9.6             # via diff-cover, jinja2-pluralize
+markupsafe==1.0           # via jinja2
+packaging==16.8           # via caniusepython3
 path.py==10.3.1           # via edx-i18n-tools
 pip-tools==1.9.0
 pkginfo==1.4.1            # via twine
 pluggy==0.4.0             # via tox
 polib==1.0.8              # via edx-i18n-tools
-py==1.4.33                # via tox
+py==1.4.34                # via tox
 pycodestyle==2.3.1
 pydocstyle==2.0.0
 pygments==2.2.0           # via diff-cover
 pyparsing==2.2.0          # via packaging
-pyYaml==3.12              # via edx-i18n-tools
-requests-toolbelt==0.7.1  # via twine
-requests==2.14.2          # via caniusepython3, requests-toolbelt, twine
-six==1.10.0               # via diff-cover, edx-i18n-tools, packaging, pip-tools, pydocstyle, setuptools
+pytz==2017.2              # via django
+pyyaml==3.12              # via edx-i18n-tools
+requests-toolbelt==0.8.0  # via twine
+requests==2.18.3          # via caniusepython3, requests-toolbelt, twine
+six==1.10.0               # via diff-cover, edx-i18n-tools, packaging, pip-tools, pydocstyle
 snowballstemmer==1.2.1    # via pydocstyle
 tox-battery==0.4
 tox==2.7.0
-twine==1.8.1
+tqdm==4.15.0              # via twine
+twine==1.9.1
+urllib3==1.22             # via requests
 virtualenv==15.1.0        # via tox
 wheel==0.29.0
-
-# The following packages are considered to be unsafe in a requirements file:
-# pip                       # via caniusepython3
-# setuptools                # via caniusepython3, twine
 edx-lint                  # For updating pylintrc
