@@ -57,3 +57,14 @@ def test_no_capture_on_retry_unless_exception():
     with mock.patch('celery_utils.logged_task.log') as mocklog:
         task.on_retry(exc, task_id, args, kwargs, einfo)
         assert not mocklog.warning.called
+
+
+def test_on_failure_formatting():
+    with mock.patch('celery_utils.logged_task.log') as mocklog:
+        result = tasks.failing_logged_task.apply_async()
+        try:
+            result.wait()
+        except ValueError:
+            pass
+        logmessage = mocklog.warning.call_args[0][0]
+        assert 'ValueError' in logmessage
