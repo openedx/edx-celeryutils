@@ -14,7 +14,7 @@ log = logging.getLogger(__name__)
 # pylint: disable=abstract-method
 class LoggedTask(Task):
     """
-    Task base class that emits a log statement when it gets submitted.
+    Task base class that emits a log statement when it gets submitted, retried or fails.
     """
 
     abstract = True
@@ -36,6 +36,14 @@ class LoggedTask(Task):
         """
         Capture the exception that caused the task to be retried, if any.
         """
-        super(LoggedTask, self).on_retry(exc, task_id, args, kwargs, einfo)
         if exc is not None:
             log.warning('[{}] retried due to {}'.format(task_id, einfo.traceback))
+        super(LoggedTask, self).on_retry(exc, task_id, args, kwargs, einfo)
+
+    def on_failure(self, exc, task_id, args, kwargs, einfo):
+        """
+        Capture the exception that caused the task to fail, if any.
+        """
+        if exc is not None:
+            log.warning('[{}] failed due to {}'.format(task_id, einfo.traceback))
+        super(LoggedTask, self).on_failure(exc, task_id, args, kwargs, einfo)

@@ -32,3 +32,11 @@ def simple_logged_task(a, b, c):  # pylint: disable=invalid-name
     This task gets logged
     """
     return a + b + c
+
+@app.task(base=logged_task.LoggedTask)
+def failing_logged_task():
+    """
+    This task always fails.
+    """
+    # This will raise a ValueError
+    return int("foo")
