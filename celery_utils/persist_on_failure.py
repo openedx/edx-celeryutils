@@ -1,15 +1,16 @@
 """
 Celery utility code for persistent tasks.
 """
+# pylint: disable=abstract-method
 
 from __future__ import absolute_import, division, print_function, unicode_literals
 
 from celery import Task
 
+from .logged_task import LoggedTask
 from .models import FailedTask
 
 
-# pylint: disable=abstract-method
 class PersistOnFailureTask(Task):
     """
     Custom Celery Task base class that persists task data on failure.
@@ -31,6 +32,14 @@ class PersistOnFailureTask(Task):
                 exc=_truncate_to_field(FailedTask, 'exc', repr(exc)),
             )
         super(PersistOnFailureTask, self).on_failure(exc, task_id, args, kwargs, einfo)
+
+
+class LoggedPersistOnFailureTask(PersistOnFailureTask, LoggedTask):
+    """
+    Provides persistence features, as well as logging of task invocation.
+    """
+
+    abstract = True
 
 
 def _truncate_to_field(model, field_name, value):

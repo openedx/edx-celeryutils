@@ -37,5 +37,11 @@ class LoggedTask(Task):
         Capture the exception that caused the task to be retried, if any.
         """
         super(LoggedTask, self).on_retry(exc, task_id, args, kwargs, einfo)
-        if exc is not None:
-            log.warning('[{}] retried due to {}'.format(task_id, einfo.traceback))
+        log.warning('[{}] retried due to {}'.format(task_id, getattr(einfo, 'traceback', None)))
+
+    def on_failure(self, exc, task_id, args, kwargs, einfo):
+        """
+        Capture the exception that caused the task to fail, if any.
+        """
+        log.error('[{}] failed due to {}'.format(task_id, getattr(einfo, 'traceback', None)))
+        super(LoggedTask, self).on_failure(exc, task_id, args, kwargs, einfo)
