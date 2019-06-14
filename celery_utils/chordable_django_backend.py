@@ -128,7 +128,7 @@ class ChordableDjangoBackend(DatabaseBackend):
         for _chord in chords_to_delete:
             subtask_ids = [subtask.task_id for subtask in _chord.completed_results.all()]
             _chord.completed_results.clear()
-            TaskMeta.objects.filter(task_id__in=subtask_ids).delete()
+            TaskMeta.objects.filter(task_id__in=subtask_ids).delete()                   # pylint: disable=no-member
             _chord.callback_result.delete()
             _chord.delete()
 
