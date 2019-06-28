@@ -16,7 +16,6 @@ contextlib2==0.5.5        # via importlib-metadata
 coverage==4.5.3           # via pytest-cov
 ddt==1.2.1
 django-model-utils==3.2.0
-django==1.11.21
 freezegun==0.3.12
 funcsigs==1.0.2           # via pytest
 future==0.17.1
