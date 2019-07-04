@@ -13,9 +13,9 @@ chardet==3.0.4            # via requests
 click==7.0                # via pip-tools
 configparser==3.7.4       # via importlib-metadata, pydocstyle
 contextlib2==0.5.5        # via importlib-metadata
-diff-cover==2.2.0
+diff-cover==2.3.0
 distlib==0.2.9.post0      # via caniusepython3
-django==1.11.21           # via edx-i18n-tools
+django==1.11.22           # via edx-i18n-tools
 docutils==0.14            # via readme-renderer
 edx-i18n-tools==0.4.8
 filelock==3.0.12          # via tox
@@ -49,7 +49,7 @@ six==1.12.0               # via bleach, diff-cover, edx-i18n-tools, packaging, p
 snowballstemmer==1.9.0    # via pydocstyle
 toml==0.10.0              # via tox
 tox-battery==0.5.1
-tox==3.13.1
+tox==3.13.2
 tqdm==4.32.2              # via twine
 twine==1.13.0
 urllib3==1.25.3           # via requests

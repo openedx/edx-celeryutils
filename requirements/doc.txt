@@ -4,7 +4,6 @@
 #
 #    make upgrade
 #
--e git+https://github.com/edx/django-celery.git@f87c6f914a1410463f54aebf68458c0653b20602#egg=django-celery==3.2.1+edx.1
 alabaster==0.7.12         # via sphinx
 amqp==1.4.9               # via kombu
 anyjson==0.3.3            # via kombu
@@ -14,8 +13,9 @@ bleach==3.1.0             # via readme-renderer
 celery==3.1.26.post2
 certifi==2019.6.16        # via requests
 chardet==3.0.4            # via doc8, requests
+django-celery==3.3.0
 django-model-utils==3.0.0
-django==1.11.21
+django==1.11.22
 doc8==0.8.0
 docutils==0.14            # via doc8, readme-renderer, restructuredtext-lint, sphinx
 edx-sphinx-theme==1.5.0
