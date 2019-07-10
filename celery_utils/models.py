@@ -41,6 +41,10 @@ class FailedTask(TimeStampedModel):
     datetime_resolved = models.DateTimeField(blank=True, null=True, default=None, db_index=True)
 
     class Meta(object):
+        """
+        To specify any metadata for FailedTask model.
+        """
+
         index_together = [
             ('task_name', 'exc'),
         ]

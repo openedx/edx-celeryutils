@@ -1,10 +1,10 @@
 # Core requirements for using this application
 
-celery >= 3.1,<4.0
-Django                    # Web application framework
-# Why a django-celery fork? To add Django 1.11 compatibility to the abandoned django-celery repo.
-# This dependency will be removed by the Celery 4 upgrade: https://openedx.atlassian.net/browse/PLAT-1684
--e git+https://github.com/edx/django-celery.git@f87c6f914a1410463f54aebf68458c0653b20602#egg=django-celery==3.2.1+edx.1
-django-model-utils
+-c constraints.txt
+
+django-celery
 future
+celery>= 3.1.25,<4.0	
+Django >= 1.8,<2.0
+django-model-utils==3.0.0	
 jsonfield
