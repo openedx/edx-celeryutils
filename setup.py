@@ -66,6 +66,8 @@ if sys.argv[-1] == 'tag':
 README = open(os.path.join(os.path.dirname(__file__), 'README.rst')).read()
 CHANGELOG = open(os.path.join(os.path.dirname(__file__), 'CHANGELOG.rst')).read()
 
+# sample comment to create a Test PR
+
 setup(
     name='edx-celeryutils',
     version=VERSION,
