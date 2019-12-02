@@ -17,7 +17,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('serialized_callback', models.TextField()),
-                ('callback_result', models.OneToOneField(related_name='chorddata_callback_result', to='djcelery.TaskMeta')),
+                ('callback_result', models.OneToOneField(related_name='chorddata_callback_result', to='djcelery.TaskMeta', on_delete=models.CASCADE)),
                 ('completed_results', models.ManyToManyField(related_name='chorddata_sub_results', to='djcelery.TaskMeta')),
             ],
         ),

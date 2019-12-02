@@ -226,5 +226,4 @@ class ChordableDjangoBackend(DatabaseBackend):
             return_app = deepcopy(given_app)
             return_app.backend = ChordableDjangoBackend(return_app)
             return return_app
-        else:
-            return given_app
+        return given_app

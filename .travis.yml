@@ -1,31 +1,38 @@
 language: python
+
 python:
-- 2.7
-- 3.5
+  - 2.7
+  - 3.5
 env:
-- TOXENV=django18-celery3
-- TOXENV=django19-celery3
-- TOXENV=django110-celery3
+  - TOXENV=django111
 matrix:
   include:
+  - python: 3.5
+    env: TOXENV=django20
+  - python: 3.5
+    env: TOXENV=django21
+  - python: 3.5
+    env: TOXENV=django22
   - python: 3.5
     env: TOXENV=quality
   - python: 3.5
     env: TOXENV=docs
+
 cache:
-- pip
+  - pip
 install:
-- pip install -r requirements/travis.txt
+  - pip install -r requirements/travis.txt
 script:
-- tox
+  - tox
 after_success:
-- codecov
+  - codecov
 deploy:
   provider: pypi
   user: edx
   distributions: sdist bdist_wheel
   on:
     tags: true
+    python: 3.5
     condition: '$TOXENV = quality'
   password:
     secure: iFcUH/SUDI36SMA9XxhIT565J99PBP7k3dnyk+Bx8/rUfac8e7IkmxA0S9Lh+aRdbXIxnxSEjxtsmvOeU2876+S2NSMsxt4YAaWHNISwxIlrLg5yJ3fnT5ZjnZYDaFoLS3Z/Ye7wM5TvYGZYHqJBXXbdBkDFzAnZhYDVTneTeDQZ3gGrmph/tFK5QXpCLtU0Wmx5eCN/y6p9JhBHu/d3bCH2pU1+rgzDzJwcQg7tbZTh+ZzwaD3gWXPLsmHL8RdqRWIJJ6Wto13AOOoenJCIc5YUoZCxmS3Ywhlmy2sVeRmCrT95Jq1I1rGcf9HrBDV324BmxFbPVGCaApH3e2tofnPeFZIidVxTgmuh9XlIDR0CcYCfxfCttxLA8b/Fr6kpBbwvfEHsJL5g0mbOc++/pchJ5sgcW5aR5Hv8+4QPXSc0GNCkzII5nznV5unS78jnj6U5/x5iXd1OxiBN4p7rGwn39BN5ExL5neK/A0NRyUamRp0JNbBM2tZeOZadzbm44u9s94JHdqucbON3GZIVuoyXHAfaLMCNfHP4MHaOy7X9pW2H60/gGiQgCMgdSXBd15dXxYcEpjhZ+dR3wf+Z78tX3U50m4fr/ddthlHm7dfX4x+j8varQOSmIP/v5aPPRsf75s8owqSwyLoEV4rtioEylK9m548IvlcocOFf8GI=
