@@ -39,12 +39,12 @@ docs: ## generate Sphinx HTML documentation, including API docs
 upgrade: export CUSTOM_COMPILE_COMMAND=make upgrade
 upgrade: ## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
 	pip install -q pip-tools
-	pip-compile --upgrade -o requirements/base.txt requirements/base.in
-	pip-compile --upgrade -o requirements/dev.txt requirements/dev.in requirements/quality.in
-	pip-compile --upgrade -o requirements/doc.txt requirements/base.in requirements/doc.in
-	pip-compile --upgrade -o requirements/quality.txt requirements/quality.in
-	pip-compile --upgrade -o requirements/test.txt requirements/base.in requirements/test.in
-	pip-compile --upgrade -o requirements/travis.txt requirements/travis.in
+	pip-compile --rebuild  --upgrade -o requirements/base.txt requirements/base.in
+	pip-compile --rebuild  --upgrade -o requirements/dev.txt requirements/dev.in requirements/quality.in
+	pip-compile --rebuild  --upgrade -o requirements/doc.txt requirements/base.in requirements/doc.in
+	pip-compile --rebuild  --upgrade -o requirements/quality.txt requirements/quality.in
+	pip-compile --rebuild  --upgrade -o requirements/test.txt requirements/base.in requirements/test.in
+	pip-compile --rebuild  --upgrade -o requirements/travis.txt requirements/travis.in
 	# Workaround for packages that break pip-tools due to python version specifiers somewhere upstream
 	# See https://github.com/nvie/pip-tools/issues/206
 	cat requirements/dev-extra.txt >> requirements/dev.txt

@@ -147,7 +147,7 @@ def test_failing_chord_propagate():
 
     assert chord_data.callback_result.status == FAILURE
     assert isinstance(chord_data.callback_result.result, ChordError)
-    assert len(chord_data.callback_result.traceback) > 0
+    assert chord_data.callback_result.traceback
 
 
 @pytest.mark.django_db
@@ -172,7 +172,7 @@ def test_callback_error():
 
     assert chord_data.callback_result.status == FAILURE
     assert isinstance(chord_data.callback_result.result, NotImplementedError)
-    assert len(chord_data.callback_result.traceback) > 0
+    assert chord_data.callback_result.traceback
     assert chord_data.completed_results.filter(status=SUCCESS).count() == 10
 
 

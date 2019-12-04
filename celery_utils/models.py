@@ -84,7 +84,7 @@ class ChordData(models.Model):
 
     completed_results = models.ManyToManyField(TaskMeta, related_name='chorddata_sub_results')
     serialized_callback = models.TextField()  # A frozen, serialized callback signature
-    callback_result = models.OneToOneField(TaskMeta, related_name='chorddata_callback_result')
+    callback_result = models.OneToOneField(TaskMeta, related_name='chorddata_callback_result', on_delete=models.CASCADE)
 
     def __str__(self):
         return "{} depends on {} subtasks, status {}".format(
