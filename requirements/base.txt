@@ -10,8 +10,9 @@ billiard==3.3.0.23        # via celery
 celery==3.1.26.post2
 django-celery==3.3.1
 django-model-utils==3.0.0
-django==1.11.26
+django==2.2.9
 future==0.18.2
-jsonfield==2.0.2
+jsonfield2==3.0.3
 kombu==3.0.37             # via celery
 pytz==2019.3              # via celery, django
+sqlparse==0.3.0           # via django

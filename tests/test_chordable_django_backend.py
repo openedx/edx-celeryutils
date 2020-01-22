@@ -39,7 +39,7 @@ def chord_callback(results):
     """
     Toy example of a callback.
     """
-    return sum([result for result in results])
+    return sum(result for result in results)
 
 
 @chord_task()

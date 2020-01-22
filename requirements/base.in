@@ -5,6 +5,6 @@
 django-celery
 future
 celery>= 3.1.25,<4.0	
-Django >= 1.11
+Django >= 1.11 , <2.3
 django-model-utils==3.0.0	
-jsonfield
+jsonfield2

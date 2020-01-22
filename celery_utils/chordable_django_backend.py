@@ -146,20 +146,18 @@ class ChordableDjangoBackend(DatabaseBackend):
         u"""
         Deliberate override of abstract base method. We don't do anything here.
         """
-        pass
 
     def on_chord_part_return(self, task, state, result, propagate=False):  # pylint: disable=redefined-outer-name
-        u"""
+        """
         Update the linking ChordData object and execute callback if needed.
 
-        Parameters
-        ----------
-            subtask: The subtask that just finished executing. Most useful values
-                are stored on subtask.request.
-            state: the status of the just-finished subtask.
-            result: the resulting value of subtask execution.
+        Args:
+        ----
+            task: The task that just finished executing. Most useful values are stored on task.request.
+            state: the status of the just-finished task.
+            result: the resulting value of task execution.
             propagate: unused here, we check CELERY_CHORD_PROPAGATES and the
-                chord's options in chord_data.execute_callback()
+                chord's options in chord_data.execute_callback().
 
         """
         with transaction.atomic():
@@ -179,11 +177,11 @@ class ChordableDjangoBackend(DatabaseBackend):
                 chord_data.execute_callback()
 
     def apply_chord(self, header, partial_args, group_id, body, **options):
-        u"""
+        """
         Instantiate a linking ChordData object before executing subtasks.
 
-        Parameters
-        ----------
+        Args:
+        ----
             header: a list of incomplete subtask signatures, with partial
                 different-per-instance arguments already set.
             partial_args: list of same-per-instance subtask arguments.
@@ -215,7 +213,6 @@ class ChordableDjangoBackend(DatabaseBackend):
         havoc, and let slip the dogs of repeats-every-second polling. We do not
         want that to happen, and so override the method to do nothing.
         """
-        pass
 
     @classmethod
     def get_suitable_app(cls, given_app):

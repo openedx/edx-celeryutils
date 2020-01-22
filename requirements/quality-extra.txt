@@ -1,2 +1,0 @@
-pylint==1.6.4
-edx-lint==0.5.2                  # edX pylint rules and plugins

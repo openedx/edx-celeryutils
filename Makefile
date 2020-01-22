@@ -45,11 +45,6 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 	pip-compile --rebuild  --upgrade -o requirements/quality.txt requirements/quality.in
 	pip-compile --rebuild  --upgrade -o requirements/test.txt requirements/base.in requirements/test.in
 	pip-compile --rebuild  --upgrade -o requirements/travis.txt requirements/travis.in
-	# Workaround for packages that break pip-tools due to python version specifiers somewhere upstream
-	# See https://github.com/nvie/pip-tools/issues/206
-	cat requirements/dev-extra.txt >> requirements/dev.txt
-	cat requirements/quality-extra.txt >> requirements/quality.txt
-	cat requirements/test-extra.txt >> requirements/test.txt
 	# Let tox control the Django version for tests
 	sed '/^[dD]jango==/d' requirements/test.txt > requirements/test.tmp
 	mv requirements/test.tmp requirements/test.txt

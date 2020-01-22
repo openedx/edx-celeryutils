@@ -1,1 +1,0 @@
-edx-lint                  # For updating pylintrc
