@@ -10,3 +10,6 @@
 
   # These packages are backports which can only be installed on Python 2.7
 futures ; python_version == "2.7"
+
+# jsonfield2>3.0.3 has dropped support for python 3.5
+jsonfield2==3.0.3

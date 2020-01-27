@@ -40,7 +40,7 @@ class FailedTask(TimeStampedModel):
     exc = models.CharField(max_length=255)
     datetime_resolved = models.DateTimeField(blank=True, null=True, default=None, db_index=True)
 
-    class Meta(object):
+    class Meta:
         """
         To specify any metadata for FailedTask model.
         """
