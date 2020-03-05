@@ -17,6 +17,10 @@ Unreleased
 
 Added
 _____
+[0.4.0] - 2020-03-05
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Removed all references to django-celery and removed it as a dependency.
+* Removed ChordableDjangoBackend and ChordData.
 
 [0.2.7] - 2017-12-04
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

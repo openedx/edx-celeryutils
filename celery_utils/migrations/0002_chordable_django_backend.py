@@ -5,20 +5,15 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
+    """
+    This migration used to have a model with a dependency on django-celery.
+
+    All the code in this migration has been removed along with the library.
+    """
 
     dependencies = [
-        ('djcelery', '0001_initial'),
         ('celery_utils', '0001_initial'),
     ]
 
     operations = [
-        migrations.CreateModel(
-            name='ChordData',
-            fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('serialized_callback', models.TextField()),
-                ('callback_result', models.OneToOneField(related_name='chorddata_callback_result', to='djcelery.TaskMeta', on_delete=models.CASCADE)),
-                ('completed_results', models.ManyToManyField(related_name='chorddata_sub_results', to='djcelery.TaskMeta')),
-            ],
-        ),
     ]
