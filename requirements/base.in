@@ -2,7 +2,6 @@
 
 -c constraints.txt
 
-django-celery
 future
 celery>= 3.1.25,<4.0	
 Django >= 1.11 , <2.3
