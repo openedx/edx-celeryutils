@@ -13,3 +13,6 @@ futures ; python_version == "2.7"
 
 # jsonfield2>3.0.3 has dropped support for python 3.5
 jsonfield2==3.0.3
+
+# Version 4.0.0 dropped support for Django < 2.0.1
+django-model-utils<4.0.0

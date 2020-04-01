@@ -11,7 +11,7 @@ billiard==3.3.0.23        # via celery
 celery==3.1.26.post2      # via -r requirements/base.in
 coverage==5.0.3           # via pytest-cov
 ddt==1.2.2                # via -r requirements/test.in
-django-model-utils==3.0.0  # via -r requirements/base.in
+django-model-utils==3.2.0  # via -r requirements/base.in
 freezegun==0.3.15         # via -r requirements/test.in
 future==0.18.2            # via -r requirements/base.in
 importlib-metadata==1.5.0  # via pluggy, pytest
