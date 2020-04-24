@@ -34,10 +34,7 @@ def test_fallible_task_with_failure():
     assert failed_task_object.task_name == tasks.fallible_task.name
     assert failed_task_object.args == []
     assert failed_task_object.kwargs == {'message': 'The example task failed'}
-    if six.PY2:
-        assert failed_task_object.exc == "ValueError(u'The example task failed',)"
-    else:
-        assert failed_task_object.exc == "ValueError('The example task failed',)"
+    assert failed_task_object.exc == "ValueError('The example task failed')"
     assert failed_task_object.datetime_resolved is None
 
 
@@ -62,16 +59,11 @@ def test_persists_with_overlength_field():
     # Length is max field length
     assert len(failed_task_object.exc) == 255
     # Ellipses are put in the middle
-    if six.PY2:
-        # Ellipses offset by one due to the u' in the ValueError
-        assert failed_task_object.exc.startswith("ValueError(u'")
-        assert failed_task_object.exc[124:133] == '037...590'
-    else:
-        assert failed_task_object.exc.startswith("ValueError('")
-        assert failed_task_object.exc[124:133] == '370...590'
+    assert failed_task_object.exc.startswith("ValueError('")
+    assert failed_task_object.exc[124:133] == '370...059'
     # The beginning of the input is captured
     # The end of the input is captured
-    assert failed_task_object.exc[-9:] == "098099',)"
+    assert failed_task_object.exc[-9:] == "7098099')"
 
 
 @pytest.mark.django_db

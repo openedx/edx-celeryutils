@@ -29,7 +29,8 @@ class PersistOnFailureTask(Task):
                 task_id=task_id,  # Fixed length UUID: No need to truncate
                 args=args,
                 kwargs=kwargs,
-                exc=_truncate_to_field(FailedTask, 'exc', repr(exc)),
+                # TODO: Remove ".replace(',', ''))" when python 3.5 support is dropped
+                exc=_truncate_to_field(FailedTask, 'exc', repr(exc).replace(',', '')),
             )
         super(PersistOnFailureTask, self).on_failure(exc, task_id, args, kwargs, einfo)
 
