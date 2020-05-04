@@ -2,20 +2,14 @@ language: python
 
 python:
   - 3.5
+  - 3.8
 env:
-  - TOXENV=django111
-matrix:
-  include:
-  - python: 3.5
-    env: TOXENV=django20
-  - python: 3.5
-    env: TOXENV=django21
-  - python: 3.5
-    env: TOXENV=django22
-  - python: 3.5
-    env: TOXENV=quality
-  - python: 3.5
-    env: TOXENV=docs
+  - TOXENV=django22
+  - TOXENV=quality
+  - TOXENV=docs
+jobs:
+  allow_failures:
+    - python: 3.8
 
 cache:
   - pip

@@ -8,11 +8,8 @@
 # pin when possible.  Writing an issue against the offending project and
 # linking to it here is good.
 
-  # These packages are backports which can only be installed on Python 2.7
-futures ; python_version == "2.7"
+# Stay on an LTS release
+django<2.3
 
 # jsonfield2>3.0.3 has dropped support for python 3.5
 jsonfield2==3.0.3
-
-# Version 4.0.0 dropped support for Django < 2.0.1
-django-model-utils<4.0.0
