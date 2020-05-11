@@ -14,9 +14,14 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
+*
 
-Added
-_____
+[0.5.0] - 2020-04-01
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+* No functional change.
+
+
 [0.4.0] - 2020-03-05
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Removed all references to django-celery and removed it as a dependency.
