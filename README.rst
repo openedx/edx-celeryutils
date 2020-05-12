@@ -44,6 +44,16 @@ Documentation
 
 The full documentation is at https://edx-celeryutils.readthedocs.org.
 
+Publishing a Release
+--------------------
+
+After a PR merges, a new version of the package will automatically be released by Travis when the commit is tagged. Use::
+
+    git tag -a X.Y.Z -m "Releasing version X.Y.Z"
+    git push origin X.Y.Z
+
+Do **not** create a Github Release, or ensure its message points to the CHANGELOG.rst.
+
 License
 -------
 
@@ -61,9 +71,6 @@ Please read `How To Contribute <https://github.com/edx/edx-platform/blob/master/
 
 Even though they were written with ``edx-platform`` in mind, the guidelines
 should be followed for Open edX code in general.
-
-PR description template can be found at
-`PR_TEMPLATE.md <https://github.com/edx/edx-celeryutils/blob/master/PR_TEMPLATE.md>`_
 
 Reporting Security Issues
 -------------------------
