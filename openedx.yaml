@@ -1,7 +1,9 @@
 # openedx.yaml
 
 ---
-owner: edx/teaching-and-learning
+owner:
+    type: team
+    team: edx/arch-bom
 nick: edx-celeryutils
 tags:
     - tools
