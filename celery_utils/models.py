@@ -24,6 +24,13 @@ log = logging.getLogger(__name__)
 class FailedTask(TimeStampedModel):
     """
     Representation of tasks that have failed.
+
+    .. pii::
+       Stores arbitrary task parameters, which theoretically could include
+       email addresses, although as of May 2020 does not seem to.
+       Old tasks can be manually deleted in the Django administration UI.
+    .. pii_retirement: local_api
+    .. pii_types: other
     """
 
     task_name = models.CharField(max_length=255)

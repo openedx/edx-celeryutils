@@ -1,7 +1,9 @@
 # openedx.yaml
 
 ---
-owner: edx/teaching-and-learning
+owner:
+    type: team
+    team: edx/arch-bom
 nick: edx-celeryutils
 tags:
     - tools
@@ -14,3 +16,4 @@ oeps:
         state: False
         reason: Not relevant to this app
     oep-7: True
+    oep-30: True

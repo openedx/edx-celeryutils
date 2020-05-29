@@ -25,24 +25,22 @@ edx-celeryutils
     :target: https://github.com/edx/edx-celeryutils/blob/master/LICENSE.txt
     :alt: License
 
-The ``README.rst`` file should start with a brief description of the repository,
-which sets it in the context of other repositories under the ``edx``
-organization. It should make clear where this fits in to the overall edX
-codebase.
-
-Code to support working with celery
+Code to support working with Celery, a distributed task queue.
 
 Overview (please modify)
 ------------------------
 
-The ``README.rst`` file should then provide an overview of the code in this
-repository, including the main components and useful entry points for starting
-to understand the code in more detail.
+This package contains utilities to wrap tasks with logging and to
+persist them if they fail.
+
+It also supports Django administration for searching and deleting
+failed tasks, and management commands for rerunning failed tasks and
+deleting old ones.
 
 Documentation
 -------------
 
-The full documentation is at https://edx-celeryutils.readthedocs.org.
+(TODO: `Set up documentation <https://openedx.atlassian.net/wiki/spaces/DOC/pages/21627535/Publish+Documentation+on+Read+the+Docs>`_)
 
 Publishing a Release
 --------------------
