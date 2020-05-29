@@ -28,6 +28,8 @@ class FailedTask(TimeStampedModel):
     .. pii::
        Stores arbitrary task parameters, which theoretically could include
        email addresses, although as of May 2020 does not seem to.
+       Old tasks can be manually deleted in the Django administration UI.
+    .. pii_retirement: local_api
     .. pii_types: other
     """
 
