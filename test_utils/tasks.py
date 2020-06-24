@@ -2,8 +2,6 @@
 Tasks used in tests
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 from celery_utils import logged_task, persist_on_failure
 
 from .celery import app

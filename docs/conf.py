@@ -13,16 +13,16 @@ All configuration values have a default; values that are commented out
 serve to show the default.
 """
 
-from __future__ import absolute_import, unicode_literals
+
 
 import os
-import sys
 from subprocess import check_call
-
-import edx_theme
+import sys
 
 import django
 from django.utils import six
+
+import edx_theme
 
 # Configure Django for autodoc usage
 django.setup()

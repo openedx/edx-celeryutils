@@ -2,11 +2,9 @@
 Celery tasks that support the utils in this module.
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
+from django.utils.timezone import now
 
 from celery import shared_task
-
-from django.utils.timezone import now
 
 
 @shared_task

@@ -3,15 +3,12 @@
 Database models for celery_utils.
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 import logging
-
-from celery import current_app
 
 from django.db import models
 from django.utils.encoding import python_2_unicode_compatible
 
+from celery import current_app
 from jsonfield import JSONField
 from model_utils.models import TimeStampedModel
 

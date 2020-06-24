@@ -3,7 +3,6 @@ Celery utility code for persistent tasks.
 """
 # pylint: disable=abstract-method
 
-from __future__ import absolute_import, division, print_function, unicode_literals
 
 from celery import Task
 
