@@ -2,8 +2,6 @@
 Command to clean up resolved FailedTask records.
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 from datetime import timedelta
 import logging
 from textwrap import dedent

@@ -9,8 +9,6 @@ A task built with the LoggedTask base class is imported from test_utils.tasks.
 
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 from billiard.einfo import ExceptionInfo
 import mock
 import pytest

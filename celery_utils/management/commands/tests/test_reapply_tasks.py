@@ -2,8 +2,6 @@
 Test management command to reapply failed tasks.
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 from collections import Counter
 from datetime import datetime
 

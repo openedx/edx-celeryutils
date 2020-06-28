@@ -6,8 +6,6 @@ Tasks built with the FailedTask base class are imported from test_utils.tasks.
   * passing_task - Always passes when run.
 """
 
-from __future__ import absolute_import, division, print_function, unicode_literals
-
 import pytest
 import six
 
