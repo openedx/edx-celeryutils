@@ -13,3 +13,5 @@ django<2.3
 
 # jsonfield2>3.0.3 has dropped support for python 3.5
 jsonfield2==3.0.3
+
+celery<4.3          # Python 3.8 isn't officially supported until 4.4 and 4.3 requires redis version 3.2.0 or above.
