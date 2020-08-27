@@ -6,6 +6,7 @@ Django applications, so these settings will not be used.
 """
 
 from os.path import abspath, dirname, join
+import tempfile
 
 
 def root(*args):
@@ -73,4 +74,6 @@ TEMPLATES = [
 
 BROKER_URL = 'memory://'
 CELERY_ALWAYS_EAGER = True
-CELERY_RESULT_BACKEND = 'cache+memcached://127.0.0.1:11211/'
+
+results_dir = tempfile.TemporaryDirectory()
+CELERY_RESULT_BACKEND = 'file://{}'.format(results_dir.name)
