@@ -15,6 +15,7 @@ app = Celery('proj')  # pylint: disable=invalid-name
 # the configuration object to child processes.
 # - namespace='CELERY' means all celery-related configuration keys
 #   should have a `CELERY_` prefix.
+app.conf.task_protocol = 1
 app.config_from_object('django.conf:settings')
 app.conf.CELERY_TASK_ALWAYS_EAGER = True
 
