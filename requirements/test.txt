@@ -6,17 +6,17 @@
 #
 amqp==2.6.1               # via kombu
 attrs==20.1.0             # via pytest
-billiard==3.5.0.5         # via celery
-celery==4.2.2             # via -c requirements/constraints.txt, -r requirements/base.in
+billiard==3.6.3.0         # via celery
+celery==4.3.0             # via -c requirements/constraints.txt, -r requirements/base.in
 coverage==5.2.1           # via pytest-cov
 ddt==1.4.1                # via -r requirements/test.in
 django-model-utils==4.0.0  # via -r requirements/base.in
 freezegun==0.3.15         # via -r requirements/test.in
 future==0.18.2            # via -r requirements/base.in
-importlib-metadata==1.7.0  # via pluggy, pytest
+importlib-metadata==1.7.0  # via kombu, pluggy, pytest
 iniconfig==1.0.1          # via pytest
 jsonfield2==3.0.3         # via -c requirements/constraints.txt, -r requirements/base.in
-kombu==4.3.0              # via celery
+kombu==4.6.11             # via celery
 mock==3.0.5               # via -r requirements/test.in
 more-itertools==8.4.0     # via pytest
 packaging==20.4           # via pytest
@@ -33,5 +33,5 @@ pytz==2020.1              # via celery, django
 six==1.15.0               # via freezegun, mock, packaging, pathlib2, python-dateutil, python-memcached
 sqlparse==0.3.1           # via django
 toml==0.10.1              # via pytest
-vine==1.3.0               # via amqp
+vine==1.3.0               # via amqp, celery
 zipp==1.2.0               # via importlib-metadata
