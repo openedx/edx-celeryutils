@@ -55,7 +55,7 @@ Do **not** create a Github Release, or ensure its message points to the CHANGELO
 License
 -------
 
-The code in this repository is licensed under the AGPL 3.0 unless
+The code in this repository is licensed under the Apache 2.0 unless
 otherwise noted.
 
 Please see ``LICENSE.txt`` for details.
