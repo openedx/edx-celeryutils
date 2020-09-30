@@ -8,7 +8,7 @@ alabaster==0.7.12         # via sphinx
 amqp==2.6.1               # via kombu
 babel==2.8.0              # via sphinx
 billiard==3.6.3.0         # via celery
-bleach==3.1.5             # via readme-renderer
+bleach==3.2.1             # via readme-renderer
 celery==4.4.7             # via -c requirements/constraints.txt, -r requirements/base.in
 certifi==2020.6.20        # via requests
 chardet==3.0.4            # via doc8, requests
@@ -20,7 +20,7 @@ edx-sphinx-theme==1.5.0   # via -r requirements/doc.in
 future==0.18.2            # via -r requirements/base.in
 idna==2.10                # via requests
 imagesize==1.2.0          # via sphinx
-importlib-metadata==1.7.0  # via kombu
+importlib-metadata==2.0.0  # via kombu
 jinja2==2.11.2            # via sphinx
 jsonfield2==3.0.3         # via -c requirements/constraints.txt, -r requirements/base.in
 kombu==4.6.11             # via celery
@@ -28,7 +28,7 @@ markupsafe==1.1.1         # via jinja2
 packaging==20.4           # via bleach, sphinx
 pbr==5.5.0                # via stevedore
 pockets==0.9.1            # via sphinxcontrib-napoleon
-pygments==2.6.1           # via doc8, readme-renderer, sphinx
+pygments==2.7.1           # via doc8, readme-renderer, sphinx
 pyparsing==2.4.7          # via packaging
 pytz==2020.1              # via babel, celery, django
 readme-renderer==26.0     # via -r requirements/doc.in

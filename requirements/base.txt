@@ -10,7 +10,7 @@ celery==4.4.7             # via -c requirements/constraints.txt, -r requirements
 django-model-utils==4.0.0  # via -r requirements/base.in
 django==2.2.16            # via -c requirements/constraints.txt, -r requirements/base.in, django-model-utils, jsonfield2
 future==0.18.2            # via -r requirements/base.in
-importlib-metadata==1.7.0  # via kombu
+importlib-metadata==2.0.0  # via kombu
 jsonfield2==3.0.3         # via -c requirements/constraints.txt, -r requirements/base.in
 kombu==4.6.11             # via celery
 pytz==2020.1              # via celery, django
