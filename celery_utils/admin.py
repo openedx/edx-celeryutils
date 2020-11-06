@@ -9,7 +9,7 @@ from .models import FailedTask
 
 class FailedTaskAdmin(admin.ModelAdmin):
     """
-    Customized admin for the FailedTask model.
+    Customized admin for the FailedTask  model.
     """
 
     list_display = ['task_id', 'task_name', 'args', 'kwargs', 'created', 'datetime_resolved']
