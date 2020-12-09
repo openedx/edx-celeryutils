@@ -46,8 +46,16 @@ upgrade: ## update the requirements/*.txt files with the latest packages satisfy
 	pip-compile --rebuild  --upgrade -o requirements/test.txt requirements/base.in requirements/test.in
 	pip-compile --rebuild  --upgrade -o requirements/travis.txt requirements/travis.in
 	# Let tox control the Django version for tests
-	sed '/^[dD]jango==/d' requirements/test.txt > requirements/test.tmp
-	mv requirements/test.tmp requirements/test.txt
+	grep -e "^amqp==\|^anyjson==\|^billiard==\|^celery==\|^kombu==\|^click-didyoumean==\|^click-repl==\|^click==\|^prompt-toolkit==\|^vine==" requirements/base.txt > requirements/celery44.txt
+	sed -i.tmp '/^[d|D]jango==/d' requirements/test.txt
+	sed -i.tmp '/^djangorestframework==/d' requirements/test.txt
+	sed -i.tmp '/^amqp==/d' requirements/test.txt
+	sed -i.tmp '/^anyjson==/d' requirements/test.txt
+	sed -i.tmp '/^billiard==/d' requirements/test.txt
+	sed -i.tmp '/^celery==/d' requirements/test.txt
+	sed -i.tmp '/^kombu==/d' requirements/test.txt
+	sed -i.tmp '/^vine==/d' requirements/test.txt
+	rm requirements/test.txt.tmp
 
 quality: ## check coding style with pycodestyle and pylint
 	tox -e quality
