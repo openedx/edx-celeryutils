@@ -3,8 +3,7 @@ language: python
 python:
   - 3.8
 env:
-  - TOXENV=celery44-django22
-  - TOXENV=celery50-django22
+  - TOXENV=django22
   - TOXENV=quality
   - TOXENV=docs
 
