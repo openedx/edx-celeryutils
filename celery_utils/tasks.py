@@ -15,5 +15,5 @@ def mark_resolved(task_id):
     If more than one record exists with the specified task id, they will all be
     marked resolved.
     """
-    from . import models   # pylint: disable=import-outside-toplevel
+    from . import models  # pylint: disable=import-outside-toplevel
     models.FailedTask.objects.filter(task_id=task_id, datetime_resolved=None).update(datetime_resolved=now())

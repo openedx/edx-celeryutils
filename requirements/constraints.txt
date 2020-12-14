@@ -11,8 +11,5 @@
 # Stay on an LTS release
 django<2.3
 
-# jsonfield2>3.0.3 has dropped support for python 3.5
-jsonfield2==3.0.3
-
 # pinning it to latest release.
 celery==5.0.4

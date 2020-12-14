@@ -31,7 +31,7 @@ class PersistOnFailureTask(Task):
                 # TODO: Remove ".replace(',', ''))" when python 3.5 support is dropped
                 exc=_truncate_to_field(FailedTask, 'exc', repr(exc).replace(',', '')),
             )
-        super(PersistOnFailureTask, self).on_failure(exc, task_id, args, kwargs, einfo)
+        super().on_failure(exc, task_id, args, kwargs, einfo)
 
 
 class LoggedPersistOnFailureTask(PersistOnFailureTask, LoggedTask):
