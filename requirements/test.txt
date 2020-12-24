@@ -17,14 +17,14 @@ future==0.18.2            # via -r requirements/base.in
 iniconfig==1.1.1          # via pytest
 jsonfield2==3.0.3         # via -c requirements/constraints.txt, -r requirements/base.in
 mock==4.0.3               # via -r requirements/test.in
-packaging==20.7           # via pytest
+packaging==20.8           # via pytest
 pluggy==0.13.1            # via pytest
 prompt-toolkit==3.0.8     # via click-repl
-py==1.9.0                 # via pytest
+py==1.10.0                # via pytest
 pyparsing==2.4.7          # via packaging
 pytest-cov==2.10.1        # via -r requirements/test.in
 pytest-django==4.1.0      # via -r requirements/test.in
-pytest==6.1.2             # via pytest-cov, pytest-django
+pytest==6.2.1             # via pytest-cov, pytest-django
 python-dateutil==2.8.1    # via freezegun
 python-memcached==1.59    # via -r requirements/test.in
 pytz==2020.4              # via celery, django
