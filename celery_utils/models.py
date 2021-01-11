@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Database models for celery_utils.
 """

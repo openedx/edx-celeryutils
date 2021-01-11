@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 celery_utils Django application initialization.
 """
