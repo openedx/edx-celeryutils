@@ -6,7 +6,6 @@ Database models for celery_utils.
 import logging
 
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 
 from celery import current_app
 from jsonfield import JSONField
@@ -17,7 +16,6 @@ from celery_utils import tasks
 log = logging.getLogger(__name__)
 
 
-@python_2_unicode_compatible
 class FailedTask(TimeStampedModel):
     """
     Representation of tasks that have failed.
