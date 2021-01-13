@@ -29,7 +29,7 @@ colorama==0.4.4
     # via twine
 cryptography==3.3.1
     # via secretstorage
-diff-cover==4.0.1
+diff-cover==4.1.1
     # via -r requirements/dev.in
 distlib==0.3.1
     # via virtualenv
@@ -101,7 +101,7 @@ pycparser==2.20
     # via cffi
 pydocstyle==3.0.0
     # via -r requirements/quality.in
-pygments==2.7.3
+pygments==2.7.4
     # via
     #   diff-cover
     #   readme-renderer
@@ -158,17 +158,17 @@ toml==0.10.2
     #   tox
 tox-battery==0.6.1
     # via -r requirements/dev.in
-tox==3.20.1
+tox==3.21.0
     # via
     #   -r requirements/dev.in
     #   tox-battery
-tqdm==4.55.1
+tqdm==4.56.0
     # via twine
 twine==3.3.0
     # via -r requirements/dev.in
 urllib3==1.26.2
     # via requests
-virtualenv==20.2.2
+virtualenv==20.3.0
     # via tox
 webencodings==0.5.1
     # via bleach

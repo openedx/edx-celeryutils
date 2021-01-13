@@ -38,7 +38,7 @@ jsonfield2==4.0.0.post0
     # via -r requirements/base.in
 kombu==5.0.2
     # via celery
-prompt-toolkit==3.0.9
+prompt-toolkit==3.0.10
     # via click-repl
 pytz==2020.5
     # via
