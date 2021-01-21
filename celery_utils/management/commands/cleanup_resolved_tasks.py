@@ -36,13 +36,13 @@ class Command(BaseCommand):
         parser.add_argument(
             '--task-name', '-t',
             default=None,
-            help=u"Restrict cleanup to tasks matching the named task.",
+            help="Restrict cleanup to tasks matching the named task.",
         )
         parser.add_argument(
             '--age', '-a',
             type=int,
             default=30,
-            help=u"Only delete tasks that have been resolved for at least the specified number of days (default: 30)",
+            help="Only delete tasks that have been resolved for at least the specified number of days (default: 30)",
         )
 
     def handle(self, *args, **options):

@@ -9,8 +9,9 @@ A task built with the LoggedTask base class is imported from test_utils.tasks.
 
 """
 
+from unittest import mock
+
 from billiard.einfo import ExceptionInfo
-import mock
 import pytest
 
 from celery_utils.logged_task import LoggedTask

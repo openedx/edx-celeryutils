@@ -76,4 +76,4 @@ BROKER_URL = 'memory://'
 CELERY_ALWAYS_EAGER = True
 
 results_dir = tempfile.TemporaryDirectory()
-CELERY_RESULT_BACKEND = 'file://{}'.format(results_dir.name)
+CELERY_RESULT_BACKEND = f'file://{results_dir.name}'
