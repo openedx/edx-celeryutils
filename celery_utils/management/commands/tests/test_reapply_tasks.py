@@ -4,8 +4,8 @@ Test management command to reapply failed tasks.
 
 from collections import Counter
 from datetime import datetime
-
 from unittest import mock
+
 import pytest
 
 from django.core.management import call_command
