@@ -7,7 +7,7 @@ edx-celeryutils
 
 .. image:: https://github.com/edx/edx-celeryutils/workflows/Python%20CI/badge.svg?branch=master
     :target: https://github.com/edx/edx-celeryutils/actions?query=workflow%3A%22Python+CI%22
-    :alt: Travis
+    :alt: CI
 
 .. image:: http://codecov.io/github/edx/edx-celeryutils/coverage.svg?branch=master
     :target: http://codecov.io/github/edx/edx-celeryutils?branch=master
