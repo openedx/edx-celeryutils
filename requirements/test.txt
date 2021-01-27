@@ -23,7 +23,7 @@ click==7.1.2
     #   click-didyoumean
     #   click-plugins
     #   click-repl
-coverage==5.3.1
+coverage==5.4
     # via pytest-cov
 ddt==1.4.1
     # via -r requirements/test.in
@@ -49,7 +49,7 @@ packaging==20.8
     # via pytest
 pluggy==0.13.1
     # via pytest
-prompt-toolkit==3.0.11
+prompt-toolkit==3.0.14
     # via click-repl
 py==1.10.0
     # via pytest
@@ -59,7 +59,7 @@ pytest-cov==2.11.1
     # via -r requirements/test.in
 pytest-django==4.1.0
     # via -r requirements/test.in
-pytest==6.2.1
+pytest==6.2.2
     # via
     #   pytest-cov
     #   pytest-django
