@@ -10,10 +10,12 @@ astroid==2.4.2
     # via
     #   pylint
     #   pylint-celery
-bleach==3.2.2
+bleach==3.2.3
     # via readme-renderer
 certifi==2020.12.5
     # via requests
+cffi==1.14.4
+    # via cryptography
 chardet==4.0.0
     # via
     #   diff-cover
@@ -23,10 +25,15 @@ click-log==0.3.2
 click==7.1.2
     # via
     #   click-log
+    #   code-annotations
     #   edx-lint
     #   pip-tools
+code-annotations==1.0.2
+    # via edx-lint
 colorama==0.4.4
     # via twine
+cryptography==3.3.1
+    # via secretstorage
 diff-cover==4.2.0
     # via -r requirements/dev.in
 distlib==0.3.1
@@ -34,12 +41,14 @@ distlib==0.3.1
 django==2.2.17
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   code-annotations
     #   edx-i18n-tools
+    #   edx-lint
 docutils==0.16
     # via readme-renderer
 edx-i18n-tools==0.5.3
     # via -r requirements/dev.in
-edx-lint==1.6
+edx-lint==3.0.2
     # via
     #   -r requirements/dev.in
     #   -r requirements/quality.in
@@ -55,13 +64,18 @@ isort==5.7.0
     # via
     #   -r requirements/quality.in
     #   pylint
+jeepney==0.6.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2-pluralize==0.3.0
     # via diff-cover
 jinja2==2.11.2
     # via
+    #   code-annotations
     #   diff-cover
     #   jinja2-pluralize
-keyring==21.8.0
+keyring==22.0.1
     # via twine
 lazy-object-proxy==1.4.3
     # via astroid
@@ -77,6 +91,8 @@ path.py==12.5.0
     # via edx-i18n-tools
 path==15.0.1
     # via path.py
+pbr==5.5.1
+    # via stevedore
 pip-tools==5.5.0
     # via -r requirements/dev.in
 pkginfo==1.7.0
@@ -91,6 +107,8 @@ py==1.10.0
     # via tox
 pycodestyle==2.6.0
     # via -r requirements/quality.in
+pycparser==2.20
+    # via cffi
 pydocstyle==3.0.0
     # via -r requirements/quality.in
 pygments==2.7.4
@@ -99,7 +117,7 @@ pygments==2.7.4
     #   readme-renderer
 pylint-celery==0.3
     # via edx-lint
-pylint-django==2.3.0
+pylint-django==2.4.2
     # via edx-lint
 pylint-plugin-utils==0.6
     # via
@@ -113,10 +131,14 @@ pylint==2.6.0
     #   pylint-plugin-utils
 pyparsing==2.4.7
     # via packaging
+python-slugify==4.0.1
+    # via code-annotations
 pytz==2020.5
     # via django
 pyyaml==5.4.1
-    # via edx-i18n-tools
+    # via
+    #   code-annotations
+    #   edx-i18n-tools
 readme-renderer==28.0
     # via twine
 requests-toolbelt==0.9.1
@@ -127,20 +149,27 @@ requests==2.25.1
     #   twine
 rfc3986==1.4.0
     # via twine
+secretstorage==3.3.0
+    # via keyring
 six==1.15.0
     # via
     #   astroid
     #   bleach
+    #   cryptography
     #   edx-i18n-tools
     #   edx-lint
     #   pydocstyle
     #   readme-renderer
     #   tox
     #   virtualenv
-snowballstemmer==2.0.0
+snowballstemmer==2.1.0
     # via pydocstyle
 sqlparse==0.4.1
     # via django
+stevedore==3.3.0
+    # via code-annotations
+text-unidecode==1.3
+    # via python-slugify
 toml==0.10.2
     # via
     #   pylint
@@ -155,7 +184,7 @@ tqdm==4.56.0
     # via twine
 twine==3.3.0
     # via -r requirements/dev.in
-urllib3==1.26.2
+urllib3==1.26.3
     # via requests
 virtualenv==20.4.0
     # via tox
