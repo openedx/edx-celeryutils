@@ -5,8 +5,8 @@ edx-celeryutils
     :target: https://pypi.python.org/pypi/edx-celeryutils/
     :alt: PyPI
 
-.. image:: https://travis-ci.org/edx/edx-celeryutils.svg?branch=master
-    :target: https://travis-ci.org/edx/edx-celeryutils
+.. image:: https://github.com/edx/edx-celeryutils/workflows/Python%20CI/badge.svg?branch=master
+    :target: https://github.com/edx/edx-celeryutils/actions?query=workflow%3A%22Python+CI%22
     :alt: Travis
 
 .. image:: http://codecov.io/github/edx/edx-celeryutils/coverage.svg?branch=master
