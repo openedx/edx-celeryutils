@@ -6,13 +6,13 @@
 #
 alabaster==0.7.12
     # via sphinx
-amqp==5.0.3
+amqp==5.0.5
     # via kombu
 babel==2.9.0
     # via sphinx
 billiard==3.6.3.0
     # via celery
-bleach==3.2.3
+bleach==3.3.0
     # via readme-renderer
 celery==5.0.4
     # via
@@ -38,7 +38,7 @@ click==7.1.2
     #   click-repl
 django-model-utils==4.1.1
     # via -r requirements/base.in
-django==2.2.17
+django==2.2.18
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
@@ -60,7 +60,7 @@ idna==2.10
     # via requests
 imagesize==1.2.0
     # via sphinx
-jinja2==2.11.2
+jinja2==2.11.3
     # via sphinx
 jsonfield2==4.0.0.post0
     # via -r requirements/base.in
@@ -68,7 +68,7 @@ kombu==5.0.2
     # via celery
 markupsafe==1.1.1
     # via jinja2
-packaging==20.8
+packaging==20.9
     # via
     #   bleach
     #   sphinx
@@ -85,7 +85,7 @@ pygments==2.7.4
     #   sphinx
 pyparsing==2.4.7
     # via packaging
-pytz==2020.5
+pytz==2021.1
     # via
     #   babel
     #   celery
