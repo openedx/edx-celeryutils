@@ -32,7 +32,7 @@ code-annotations==1.1.0
     # via edx-lint
 colorama==0.4.4
     # via twine
-cryptography==3.3.1
+cryptography==3.4.4
     # via secretstorage
 diff-cover==4.2.1
     # via -r requirements/dev.in
@@ -48,7 +48,7 @@ docutils==0.16
     # via readme-renderer
 edx-i18n-tools==0.5.3
     # via -r requirements/dev.in
-edx-lint==4.0.0
+edx-lint==4.0.1
     # via
     #   -r requirements/dev.in
     #   -r requirements/quality.in
@@ -149,13 +149,12 @@ requests==2.25.1
     #   twine
 rfc3986==1.4.0
     # via twine
-secretstorage==3.3.0
+secretstorage==3.3.1
     # via keyring
 six==1.15.0
     # via
     #   astroid
     #   bleach
-    #   cryptography
     #   edx-i18n-tools
     #   edx-lint
     #   pydocstyle
@@ -180,7 +179,7 @@ tox==3.21.4
     # via
     #   -r requirements/dev.in
     #   tox-battery
-tqdm==4.56.0
+tqdm==4.56.1
     # via twine
 twine==3.3.0
     # via -r requirements/dev.in
