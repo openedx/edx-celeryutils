@@ -23,7 +23,7 @@ click==7.1.2
     #   click-didyoumean
     #   click-plugins
     #   click-repl
-coverage==5.4
+coverage==5.5
     # via pytest-cov
 ddt==1.4.1
     # via -r requirements/test.in
