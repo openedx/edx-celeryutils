@@ -25,7 +25,7 @@ click==7.1.2
     #   click-repl
 coverage==5.5
     # via pytest-cov
-ddt==1.4.1
+ddt==1.4.2
     # via -r requirements/test.in
 django-model-utils==4.1.1
     # via -r requirements/base.in
@@ -49,7 +49,7 @@ packaging==20.9
     # via pytest
 pluggy==0.13.1
     # via pytest
-prompt-toolkit==3.0.16
+prompt-toolkit==3.0.17
     # via click-repl
 py==1.10.0
     # via pytest
