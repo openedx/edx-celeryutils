@@ -76,7 +76,7 @@ pbr==5.5.1
     # via stevedore
 pockets==0.9.1
     # via sphinxcontrib-napoleon
-prompt-toolkit==3.0.16
+prompt-toolkit==3.0.17
     # via click-repl
 pygments==2.8.1
     # via
@@ -129,7 +129,7 @@ sqlparse==0.4.1
     # via django
 stevedore==3.3.0
     # via doc8
-urllib3==1.26.3
+urllib3==1.26.4
     # via requests
 vine==5.0.0
     # via
