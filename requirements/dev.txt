@@ -38,13 +38,13 @@ diff-cover==5.0.1
     # via -r requirements/dev.in
 distlib==0.3.1
     # via virtualenv
-django==2.2.19
+django==2.2.20
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   code-annotations
     #   edx-i18n-tools
     #   edx-lint
-docutils==0.16
+docutils==0.17
     # via readme-renderer
 edx-i18n-tools==0.5.3
     # via -r requirements/dev.in
@@ -185,7 +185,7 @@ tox==3.23.0
     # via
     #   -r requirements/dev.in
     #   tox-battery
-tqdm==4.59.0
+tqdm==4.60.0
     # via twine
 twine==3.4.1
     # via -r requirements/dev.in

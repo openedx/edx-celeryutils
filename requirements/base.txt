@@ -4,9 +4,9 @@
 #
 #    make upgrade
 #
-amqp==5.0.5
+amqp==5.0.6
     # via kombu
-billiard==3.6.3.0
+billiard==3.6.4.0
     # via celery
 celery==5.0.4
     # via
@@ -26,7 +26,7 @@ click==7.1.2
     #   click-repl
 django-model-utils==4.1.1
     # via -r requirements/base.in
-django==2.2.19
+django==2.2.20
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
