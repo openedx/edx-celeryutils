@@ -6,7 +6,7 @@
 #
 appdirs==1.4.4
     # via virtualenv
-astroid==2.5.2
+astroid==2.5.3
     # via
     #   pylint
     #   pylint-celery
@@ -44,8 +44,10 @@ django==2.2.20
     #   code-annotations
     #   edx-i18n-tools
     #   edx-lint
-docutils==0.17
-    # via readme-renderer
+docutils==0.16
+    # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   readme-renderer
 edx-i18n-tools==0.5.3
     # via -r requirements/dev.in
 edx-lint==5.0.0
@@ -58,7 +60,7 @@ filelock==3.0.12
     #   virtualenv
 idna==2.10
     # via requests
-importlib-metadata==3.10.0
+importlib-metadata==3.10.1
     # via
     #   keyring
     #   twine
@@ -123,7 +125,7 @@ pygments==2.8.1
     #   readme-renderer
 pylint-celery==0.3
     # via edx-lint
-pylint-django==2.4.2
+pylint-django==2.4.3
     # via edx-lint
 pylint-plugin-utils==0.6
     # via
