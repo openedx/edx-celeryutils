@@ -46,8 +46,9 @@ django==2.2.20
     #   jsonfield2
 doc8==0.8.1
     # via -r requirements/doc.in
-docutils==0.17
+docutils==0.16
     # via
+    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   doc8
     #   readme-renderer
     #   restructuredtext-lint
@@ -107,7 +108,7 @@ six==1.15.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.1.0
     # via sphinx
-sphinx==3.5.3
+sphinx==3.5.4
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
