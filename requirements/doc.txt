@@ -73,7 +73,7 @@ packaging==20.9
     # via
     #   bleach
     #   sphinx
-pbr==5.5.1
+pbr==5.6.0
     # via stevedore
 pockets==0.9.1
     # via sphinxcontrib-napoleon
