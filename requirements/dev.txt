@@ -38,7 +38,7 @@ diff-cover==5.0.1
     # via -r requirements/dev.in
 distlib==0.3.1
     # via virtualenv
-django==2.2.20
+django==2.2.21
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   code-annotations
@@ -119,7 +119,7 @@ pycparser==2.20
     # via cffi
 pydocstyle==3.0.0
     # via -r requirements/quality.in
-pygments==2.8.1
+pygments==2.9.0
     # via
     #   diff-cover
     #   readme-renderer
@@ -131,16 +131,15 @@ pylint-plugin-utils==0.6
     # via
     #   pylint-celery
     #   pylint-django
-pylint==2.7.4
+pylint==2.8.2
     # via
-    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   edx-lint
     #   pylint-celery
     #   pylint-django
     #   pylint-plugin-utils
 pyparsing==2.4.7
     # via packaging
-python-slugify==4.0.1
+python-slugify==5.0.0
     # via code-annotations
 pytz==2021.1
     # via django
