@@ -5,7 +5,7 @@
 #    make upgrade
 #
     # via kombu
-attrs==20.3.0
+attrs==21.2.0
     # via pytest
     # via celery
     # via
@@ -71,7 +71,7 @@ pytz==2021.1
     # via
     #   celery
     #   django
-six==1.15.0
+six==1.16.0
     # via
     #   click-repl
     #   python-dateutil
