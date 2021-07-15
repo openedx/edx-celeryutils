@@ -26,6 +26,7 @@ charset-normalizer==2.0.2
     # via requests
 click==7.1.2
     # via
+    #   -c requirements/constraints.txt
     #   celery
     #   click-didyoumean
     #   click-plugins

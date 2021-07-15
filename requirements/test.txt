@@ -13,6 +13,7 @@ attrs==21.2.0
     #   -r requirements/base.in
 click==7.1.2
     # via
+    #   -c requirements/constraints.txt
     #   celery
     #   click-didyoumean
     #   click-plugins

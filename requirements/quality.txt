@@ -8,8 +8,9 @@ astroid==2.6.2
     # via
     #   pylint
     #   pylint-celery
-click==8.0.1
+click==7.1.2
     # via
+    #   -c requirements/constraints.txt
     #   click-log
     #   code-annotations
     #   edx-lint
