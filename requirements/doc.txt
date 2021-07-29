@@ -105,7 +105,7 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.1.0
     # via sphinx
-sphinx==4.1.1
+sphinx==4.1.2
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
