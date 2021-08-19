@@ -77,7 +77,7 @@ pockets==0.9.1
     # via sphinxcontrib-napoleon
 prompt-toolkit==3.0.19
     # via click-repl
-pygments==2.9.0
+pygments==2.10.0
     # via
     #   doc8
     #   readme-renderer
