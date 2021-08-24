@@ -32,7 +32,7 @@ ddt==1.4.3
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
     #   django-model-utils
-    #   jsonfield2
+    #   jsonfield
 django-model-utils==4.1.1
     # via -r requirements/base.in
 freezegun==1.1.0
@@ -41,7 +41,7 @@ future==0.18.2
     # via -r requirements/base.in
 iniconfig==1.1.1
     # via pytest
-jsonfield2==4.0.0.post0
+jsonfield==3.1.0
     # via -r requirements/base.in
     # via celery
 mock==4.0.3
