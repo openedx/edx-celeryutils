@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-astroid==2.7.2
+astroid==2.7.3
     # via
     #   pylint
     #   pylint-celery
@@ -35,7 +35,7 @@ colorama==0.4.4
     # via twine
 cryptography==3.4.8
     # via secretstorage
-diff-cover==6.3.4
+diff-cover==6.3.5
     # via -r requirements/dev.in
 distlib==0.3.2
     # via virtualenv
@@ -43,12 +43,11 @@ django==2.2.24
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   edx-i18n-tools
-    #   edx-lint
 docutils==0.17.1
     # via readme-renderer
 edx-i18n-tools==0.7.0
     # via -r requirements/dev.in
-edx-lint==5.0.0
+edx-lint==5.1.0
     # via
     #   -r requirements/dev.in
     #   -r requirements/quality.in
@@ -58,7 +57,7 @@ filelock==3.0.12
     #   virtualenv
 idna==3.2
     # via requests
-importlib-metadata==4.7.0
+importlib-metadata==4.8.1
     # via
     #   keyring
     #   twine
@@ -101,7 +100,7 @@ pip-tools==6.2.0
     # via -r requirements/dev.in
 pkginfo==1.7.1
     # via twine
-platformdirs==2.2.0
+platformdirs==2.3.0
     # via
     #   pylint
     #   virtualenv
