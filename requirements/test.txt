@@ -48,7 +48,7 @@ mock==4.0.3
     # via -r requirements/test.in
 packaging==21.0
     # via pytest
-pluggy==0.13.1
+pluggy==1.0.0
     # via pytest
 prompt-toolkit==3.0.20
     # via click-repl
@@ -56,7 +56,7 @@ py==1.10.0
     # via pytest
 pyparsing==2.4.7
     # via packaging
-pytest==6.2.4
+pytest==6.2.5
     # via
     #   pytest-cov
     #   pytest-django
