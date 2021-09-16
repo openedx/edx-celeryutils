@@ -47,7 +47,7 @@ pytz==2021.1
     #   django
 six==1.16.0
     # via click-repl
-sqlparse==0.4.1
+sqlparse==0.4.2
     # via django
 vine==5.0.0
     # via
