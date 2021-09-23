@@ -37,7 +37,7 @@ def test_failure():
     assert result.status == 'FAILURE'
     assert mocklog.error.called
     log_message = mocklog.error.call_args[0][0]
-    assert '[{}] failed due to Traceback'.format(result.task_id) in log_message
+    assert f'[{result.task_id}] failed due to Traceback' in log_message
 
 
 def test_retry():
@@ -55,5 +55,5 @@ def test_retry():
         with mock.patch('celery_utils.logged_task.log') as mocklog:
             task.on_retry(exc, task_id, args, kwargs, einfo)
             logmessage = mocklog.warning.call_args[0][0]
-            assert '[{}]'.format(task_id) in logmessage
+            assert f'[{task_id}]' in logmessage
             assert einfo.traceback in logmessage
