@@ -49,7 +49,7 @@ def test_persists_when_called_with_wrong_args():
 
 @pytest.mark.django_db
 def test_persists_with_overlength_field():
-    overlong_message = ''.join('%03d' % x for x in six.moves.range(100))
+    overlong_message = ''.join(f'{x:03}' for x in six.moves.range(100))
     result = tasks.fallible_task.delay(message=overlong_message)
     with pytest.raises(ValueError):
         result.wait()

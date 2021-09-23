@@ -48,8 +48,8 @@ class FailedTask(TimeStampedModel):
         Enqueue new celery task with the same arguments as the failed task.
         """
         if self.datetime_resolved is not None:
-            raise TypeError('Cannot reapply a resolved task: {}'.format(self))
-        log.info('Reapplying failed task: {}'.format(self))
+            raise TypeError(f'Cannot reapply a resolved task: {self}')
+        log.info('Reapplying failed task: {}'.format(self))  # pylint: disable=consider-using-f-string
         original_task = current_app.tasks[self.task_name]
         original_task.apply_async(
             self.args,
@@ -59,9 +59,6 @@ class FailedTask(TimeStampedModel):
         )
 
     def __str__(self):
-        return 'FailedTask: {task_name}, args={args}, kwargs={kwargs} ({resolution})'.format(
-            task_name=self.task_name,
-            args=self.args,
-            kwargs=self.kwargs,
-            resolution='not resolved' if self.datetime_resolved is None else 'resolved'
-        )
+        return f"FailedTask: {self.task_name}, " \
+               f"args={self.args}, kwargs={self.kwargs} " \
+               f"({'not resolved' if self.datetime_resolved is None else 'resolved'})"

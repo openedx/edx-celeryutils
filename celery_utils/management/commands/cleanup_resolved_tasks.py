@@ -49,10 +49,12 @@ class Command(BaseCommand):
         tasks = FailedTask.objects.filter(datetime_resolved__lt=now() - timedelta(days=options['age']))
         if options['task_name'] is not None:
             tasks = tasks.filter(task_name=options['task_name'])
-        log.info('Cleaning up {} tasks'.format(tasks.count()))
+        log.info('Cleaning up {} tasks'.format(tasks.count()))  # pylint: disable=consider-using-f-string
         if options['dry_run']:
-            log.info("Tasks to clean up:\n{}".format(
-                '\n '.join('{!r}, resolved {}'.format(task, task.datetime_resolved) for task in tasks)
+            log.info("Tasks to clean up:\n{}".format(  # pylint: disable=consider-using-f-string
+                '\n '.join('{!r}, resolved {}'.format(  # pylint: disable=consider-using-f-string
+                    task, task.datetime_resolved) for task in tasks
+                           )
             ))
         else:
             tasks.delete()
