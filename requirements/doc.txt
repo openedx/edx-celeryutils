@@ -20,7 +20,7 @@ celery==5.0.4
     #   -r requirements/base.in
 certifi==2021.5.30
     # via requests
-charset-normalizer==2.0.5
+charset-normalizer==2.0.6
     # via requests
 click==7.1.2
     # via
@@ -127,7 +127,7 @@ sqlparse==0.4.2
     # via django
 stevedore==3.4.0
     # via doc8
-urllib3==1.26.6
+urllib3==1.26.7
     # via requests
 vine==5.0.0
     # via
