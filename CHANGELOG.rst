@@ -15,6 +15,10 @@ Unreleased
 ~~~~~~~~~~
 *
 
+[1.1.1] - 2021-08-24
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Replacing jsonfield2 with jsonfield as the former is merged back into the latter one.
+
 [1.1.0] - 2021-07-07
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Added support for django 3.1 and 3.2
