@@ -41,7 +41,7 @@ kombu==5.1.0
     # via celery
 prompt-toolkit==3.0.20
     # via click-repl
-pytz==2021.1
+pytz==2021.3
     # via
     #   celery
     #   django
