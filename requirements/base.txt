@@ -31,7 +31,7 @@ django==2.2.24
     #   -r requirements/base.in
     #   django-model-utils
     #   jsonfield
-django-model-utils==4.1.1
+django-model-utils==4.2.0
     # via -r requirements/base.in
 future==0.18.2
     # via -r requirements/base.in
