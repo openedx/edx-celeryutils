@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-astroid==2.8.3
+astroid==2.8.4
     # via
     #   pylint
     #   pylint-celery
@@ -43,11 +43,11 @@ django==2.2.24
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   edx-i18n-tools
-docutils==0.17.1
+docutils==0.18
     # via readme-renderer
 edx-i18n-tools==0.8.1
     # via -r requirements/dev.in
-edx-lint==5.2.0
+edx-lint==5.2.1
     # via
     #   -r requirements/dev.in
     #   -r requirements/quality.in
@@ -136,7 +136,7 @@ pylint-plugin-utils==0.6
     # via
     #   pylint-celery
     #   pylint-django
-pyparsing==2.4.7
+pyparsing==3.0.3
     # via packaging
 python-slugify==5.0.2
     # via code-annotations
@@ -177,7 +177,7 @@ toml==0.10.2
     # via
     #   pylint
     #   tox
-tomli==1.2.1
+tomli==1.2.2
     # via pep517
 tox==3.24.4
     # via
@@ -195,7 +195,7 @@ typing-extensions==3.10.0.2
     #   pylint
 urllib3==1.26.7
     # via requests
-virtualenv==20.8.1
+virtualenv==20.9.0
     # via tox
 webencodings==0.5.1
     # via bleach

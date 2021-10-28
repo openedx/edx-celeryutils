@@ -50,11 +50,11 @@ packaging==21.0
     # via pytest
 pluggy==1.0.0
     # via pytest
-prompt-toolkit==3.0.20
+prompt-toolkit==3.0.21
     # via click-repl
 py==1.10.0
     # via pytest
-pyparsing==2.4.7
+pyparsing==3.0.3
     # via packaging
 pytest==6.2.5
     # via
@@ -81,7 +81,7 @@ sqlparse==0.4.2
     # via django
 toml==0.10.2
     # via pytest
-tomli==1.2.1
+tomli==1.2.2
     # via coverage
     # via
     #   amqp
