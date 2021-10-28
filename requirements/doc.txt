@@ -75,14 +75,14 @@ pbr==5.6.0
     # via stevedore
 pockets==0.9.1
     # via sphinxcontrib-napoleon
-prompt-toolkit==3.0.20
+prompt-toolkit==3.0.21
     # via click-repl
 pygments==2.10.0
     # via
     #   doc8
     #   readme-renderer
     #   sphinx
-pyparsing==2.4.7
+pyparsing==3.0.3
     # via packaging
 pytz==2021.3
     # via
