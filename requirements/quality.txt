@@ -20,7 +20,7 @@ code-annotations==1.2.0
     # via edx-lint
 edx-lint==5.2.1
     # via -r requirements/quality.in
-isort==5.9.3
+isort==5.10.0
     # via
     #   -r requirements/quality.in
     #   pylint
@@ -74,7 +74,7 @@ typing-extensions==3.10.0.2
     # via
     #   astroid
     #   pylint
-wrapt==1.13.2
+wrapt==1.13.3
     # via astroid
 
 # The following packages are considered to be unsafe in a requirements file:

@@ -63,11 +63,11 @@ jinja2==3.0.2
     # via sphinx
 jsonfield==3.1.0
     # via -r requirements/base.in
-kombu==5.1.0
+kombu==5.2.0
     # via celery
 markupsafe==2.0.1
     # via jinja2
-packaging==21.0
+packaging==21.2
     # via
     #   bleach
     #   sphinx
@@ -82,7 +82,7 @@ pygments==2.10.0
     #   doc8
     #   readme-renderer
     #   sphinx
-pyparsing==3.0.3
+pyparsing==2.4.7
     # via packaging
 pytz==2021.3
     # via
