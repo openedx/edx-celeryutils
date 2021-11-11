@@ -24,7 +24,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.2.0
     # via celery
-coverage[toml]==6.1.1
+coverage[toml]==6.1.2
     # via pytest-cov
 ddt==1.4.4
     # via -r requirements/test.in
@@ -50,9 +50,9 @@ packaging==21.2
     # via pytest
 pluggy==1.0.0
     # via pytest
-prompt-toolkit==3.0.21
+prompt-toolkit==3.0.22
     # via click-repl
-py==1.10.0
+py==1.11.0
     # via pytest
 pyparsing==2.4.7
     # via packaging
