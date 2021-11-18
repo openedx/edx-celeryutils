@@ -7,7 +7,6 @@ Tasks built with the FailedTask base class are imported from test_utils.tasks.
 """
 
 import pytest
-import six
 
 from celery_utils.models import FailedTask
 from test_utils import tasks
@@ -49,7 +48,7 @@ def test_persists_when_called_with_wrong_args():
 
 @pytest.mark.django_db
 def test_persists_with_overlength_field():
-    overlong_message = ''.join(f'{x:03}' for x in six.moves.range(100))
+    overlong_message = ''.join(f'{x:03}' for x in range(100))
     result = tasks.fallible_task.delay(message=overlong_message)
     with pytest.raises(ValueError):
         result.wait()
