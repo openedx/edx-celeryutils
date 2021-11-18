@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-astroid==2.8.4
+astroid==2.8.5
     # via
     #   pylint
     #   pylint-celery
@@ -62,7 +62,7 @@ six==1.16.0
     # via
     #   edx-lint
     #   pydocstyle
-snowballstemmer==2.1.0
+snowballstemmer==2.2.0
     # via pydocstyle
 stevedore==3.5.0
     # via code-annotations
@@ -70,7 +70,7 @@ text-unidecode==1.3
     # via python-slugify
 toml==0.10.2
     # via pylint
-typing-extensions==3.10.0.2
+typing-extensions==4.0.0
     # via
     #   astroid
     #   pylint
