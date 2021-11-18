@@ -6,6 +6,8 @@
 #
 amqp==5.0.6
     # via kombu
+asgiref==3.4.1
+    # via django
 billiard==3.6.4.0
     # via celery
 celery==5.0.4
@@ -25,7 +27,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.2.0
     # via celery
-django==2.2.24
+django==3.2.9
     # via
     #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
     #   -r requirements/base.in
@@ -37,7 +39,7 @@ future==0.18.2
     # via -r requirements/base.in
 jsonfield==3.1.0
     # via -r requirements/base.in
-kombu==5.2.1
+kombu==5.2.2
     # via celery
 prompt-toolkit==3.0.22
     # via click-repl
