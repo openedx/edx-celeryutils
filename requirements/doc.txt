@@ -6,7 +6,7 @@
 #
 alabaster==0.7.12
     # via sphinx
-amqp==5.0.6
+amqp==5.0.7
     # via kombu
 asgiref==3.4.1
     # via django
@@ -77,7 +77,7 @@ pbr==5.8.0
     # via stevedore
 pockets==0.9.1
     # via sphinxcontrib-napoleon
-prompt-toolkit==3.0.23
+prompt-toolkit==3.0.24
     # via click-repl
 pygments==2.10.0
     # via
@@ -91,7 +91,7 @@ pytz==2021.3
     #   babel
     #   celery
     #   django
-readme-renderer==30.0
+readme-renderer==32.0
     # via -r requirements/doc.in
 requests==2.26.0
     # via sphinx
