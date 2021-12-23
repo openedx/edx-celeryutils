@@ -6,7 +6,7 @@
 #
 alabaster==0.7.12
     # via sphinx
-amqp==5.0.7
+amqp==5.0.9
     # via kombu
 asgiref==3.4.1
     # via django
@@ -106,7 +106,7 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==4.3.1
+sphinx==4.3.2
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme

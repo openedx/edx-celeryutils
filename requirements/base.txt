@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-amqp==5.0.7
+amqp==5.0.9
     # via kombu
 asgiref==3.4.1
     # via django
