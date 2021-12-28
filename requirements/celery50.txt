@@ -1,4 +1,4 @@
-amqp==5.0.7
+amqp==5.0.9
 billiard==3.6.4.0
 celery==5.0.4
 click==7.1.2
