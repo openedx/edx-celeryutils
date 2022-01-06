@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-astroid==2.9.0
+astroid==2.9.2
     # via
     #   pylint
     #   pylint-celery
@@ -48,7 +48,7 @@ pylint==2.12.2
     #   pylint-plugin-utils
 pylint-celery==0.3
     # via edx-lint
-pylint-django==2.4.4
+pylint-django==2.5.0
     # via edx-lint
 pylint-plugin-utils==0.7
     # via
