@@ -15,6 +15,11 @@ Unreleased
 ~~~~~~~~~~
 *
 
+[1.2.0] - 2022-01-19
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Removed Django22, 30, 31 support
+* Added Support for Django40
+
 [1.1.1] - 2021-08-24
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Replacing jsonfield2 with jsonfield as the former is merged back into the latter one.
