@@ -13,6 +13,3 @@
 
 # pinning it to latest release.
 celery<6.0
-
-# celery requires click<8.0 (can be removed when https://github.com/celery/celery/issues/6753 is done).
- click<8.0
