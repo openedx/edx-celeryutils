@@ -5,7 +5,7 @@
 #    make upgrade
 #
     # via kombu
-asgiref==3.4.1
+asgiref==3.5.0
     # via django
 attrs==21.4.0
     # via pytest
@@ -13,9 +13,8 @@ attrs==21.4.0
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-click==7.1.2
+click==8.0.3
     # via
-    #   -c requirements/constraints.txt
     #   celery
     #   click-didyoumean
     #   click-plugins
@@ -56,7 +55,7 @@ prompt-toolkit==3.0.24
     # via click-repl
 py==1.11.0
     # via pytest
-pyparsing==3.0.6
+pyparsing==3.0.7
     # via packaging
 pytest==6.2.5
     # via
@@ -91,3 +90,6 @@ tomli==2.0.0
     #   kombu
 wcwidth==0.2.5
     # via prompt-toolkit
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
