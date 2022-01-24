@@ -15,6 +15,10 @@ Unreleased
 ~~~~~~~~~~
 *
 
+[1.2.1] - 2022-01-24
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Updated celery constraint to <6.0 to fix make upgrade failure in edx-platform
+
 [1.2.0] - 2022-01-19
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Removed Django22, 30, 31 support

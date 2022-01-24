@@ -12,7 +12,4 @@
 -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
 
 # pinning it to latest release.
-celery==5.0.4
-
-# celery requires click<8.0 (can be removed when https://github.com/celery/celery/issues/6753 is done).
- click<8.0
+celery<6.0
