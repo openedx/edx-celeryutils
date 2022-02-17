@@ -51,13 +51,13 @@ packaging==21.3
     # via pytest
 pluggy==1.0.0
     # via pytest
-prompt-toolkit==3.0.27
+prompt-toolkit==3.0.28
     # via click-repl
 py==1.11.0
     # via pytest
 pyparsing==3.0.7
     # via packaging
-pytest==7.0.0
+pytest==7.0.1
     # via
     #   pytest-cov
     #   pytest-django
