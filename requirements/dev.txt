@@ -56,7 +56,7 @@ filelock==3.6.0
     #   virtualenv
 idna==3.3
     # via requests
-importlib-metadata==4.11.1
+importlib-metadata==4.11.2
     # via
     #   keyring
     #   twine
@@ -84,7 +84,7 @@ packaging==21.3
     # via
     #   bleach
     #   tox
-path==16.3.0
+path==16.4.0
     # via edx-i18n-tools
 pbr==5.8.1
     # via stevedore
@@ -132,7 +132,7 @@ pylint-plugin-utils==0.7
     #   pylint-django
 pyparsing==3.0.7
     # via packaging
-python-slugify==6.1.0
+python-slugify==6.1.1
     # via code-annotations
 pytz==2021.3
     # via django
@@ -179,7 +179,7 @@ tox==3.24.5
     #   tox-battery
 tox-battery==0.6.1
     # via -r requirements/dev.in
-tqdm==4.62.3
+tqdm==4.63.0
     # via twine
 twine==3.8.0
     # via -r requirements/dev.in
@@ -191,7 +191,7 @@ urllib3==1.26.8
     # via
     #   requests
     #   twine
-virtualenv==20.13.1
+virtualenv==20.13.2
     # via tox
 webencodings==0.5.1
     # via bleach
