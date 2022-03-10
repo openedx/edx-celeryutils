@@ -36,7 +36,7 @@ ddt==1.4.4
     #   jsonfield
 django-model-utils==4.2.0
     # via -r requirements/base.in
-freezegun==1.1.0
+freezegun==1.2.0
     # via -r requirements/test.in
 future==0.18.2
     # via -r requirements/base.in
