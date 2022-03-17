@@ -1,15 +1,14 @@
 [main]
 host = https://www.transifex.com
 
-[o:open-edx:p:edx-platform:r:edx-celeryutils]
+[edx-platform.edx-celeryutils]
 file_filter = celeryutils/conf/locale/<lang>/LC_MESSAGES/django.po
 source_file = celeryutils/conf/locale/en/LC_MESSAGES/django.po
 source_lang = en
-type        = PO
+type = PO
 
-[o:open-edx:p:edx-platform:r:edx-celeryutils-js]
+[edx-platform.edx-celeryutils-js]
 file_filter = celeryutils/conf/locale/<lang>/LC_MESSAGES/djangojs.po
 source_file = celeryutils/conf/locale/en/LC_MESSAGES/djangojs.po
 source_lang = en
-type        = PO
-
+type = PO
