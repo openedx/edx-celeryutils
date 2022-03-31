@@ -14,7 +14,7 @@ celery==5.2.3
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-click==8.0.4
+click==8.1.1
     # via
     #   celery
     #   click-didyoumean
@@ -42,7 +42,7 @@ kombu==5.2.4
     # via celery
 prompt-toolkit==3.0.28
     # via click-repl
-pytz==2021.3
+pytz==2022.1
     # via
     #   celery
     #   django
