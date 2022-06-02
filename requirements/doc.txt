@@ -18,7 +18,7 @@ bleach==5.0.0
     # via readme-renderer
 build==0.8.0
     # via -r requirements/doc.in
-celery==5.2.6
+celery==5.2.7
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
@@ -54,7 +54,7 @@ django-model-utils==4.2.0
     # via -r requirements/base.in
 doc8==0.11.2
     # via -r requirements/doc.in
-docutils==0.17.1
+docutils==0.18.1
     # via
     #   doc8
     #   readme-renderer
@@ -142,7 +142,7 @@ six==1.16.0
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
-sphinx==4.5.0
+sphinx==5.0.0
     # via
     #   -r requirements/doc.in
     #   edx-sphinx-theme
@@ -168,7 +168,7 @@ tomli==2.0.1
     # via
     #   build
     #   pep517
-twine==4.0.0
+twine==4.0.1
     # via -r requirements/doc.in
 typing-extensions==4.2.0
     # via rich
