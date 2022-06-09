@@ -74,7 +74,7 @@ jinja2==3.1.2
     # via
     #   code-annotations
     #   diff-cover
-keyring==23.5.1
+keyring==23.6.0
     # via twine
 lazy-object-proxy==1.7.1
     # via astroid
@@ -92,7 +92,7 @@ pep517==0.12.0
     # via pip-tools
 pip-tools==6.6.2
     # via -r requirements/dev.in
-pkginfo==1.8.2
+pkginfo==1.8.3
     # via twine
 platformdirs==2.5.2
     # via
@@ -117,7 +117,7 @@ pygments==2.12.0
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.14.0
+pylint==2.14.1
     # via
     #   edx-lint
     #   pylint-celery
