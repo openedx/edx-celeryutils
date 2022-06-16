@@ -10,7 +10,7 @@ amqp==5.1.1
     # via kombu
 asgiref==3.5.2
     # via django
-babel==2.10.1
+babel==2.10.2
     # via sphinx
 billiard==3.6.4.0
     # via celery
@@ -22,7 +22,7 @@ celery==5.2.7
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-certifi==2022.5.18.1
+certifi==2022.6.15
     # via requests
 cffi==1.15.0
     # via cryptography
@@ -118,7 +118,7 @@ pytz==2022.1
     #   django
 readme-renderer==35.0
     # via twine
-requests==2.27.1
+requests==2.28.0
     # via
     #   requests-toolbelt
     #   sphinx
