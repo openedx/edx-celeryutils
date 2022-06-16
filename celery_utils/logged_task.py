@@ -22,7 +22,7 @@ class LoggedTask(Task):
         Emit a log statement when the task is submitted.
         """
         result = super().apply_async(args=args, kwargs=kwargs, **options)
-        log.info('Task {}[{}] submitted with arguments {}, {}'.format(  # pylint: disable=consider-using-f-string
+        log.info('Task {}[{}] submitted with arguments {}, {}'.format(
             self.name,
             result.id,
             args,
@@ -36,7 +36,7 @@ class LoggedTask(Task):
         """
         super().on_retry(exc, task_id, args, kwargs, einfo)
         log.warning(
-            '[{}] retried due to {}'.format(  # pylint: disable=consider-using-f-string
+            '[{}] retried due to {}'.format(
                 task_id, getattr(einfo, 'traceback', None)
             )
         )
@@ -46,7 +46,7 @@ class LoggedTask(Task):
         Capture the exception that caused the task to fail, if any.
         """
         log.error(
-            '[{}] failed due to {}'.format(  # pylint: disable=consider-using-f-string
+            '[{}] failed due to {}'.format(
                 task_id, getattr(einfo, 'traceback', None)
             )
         )

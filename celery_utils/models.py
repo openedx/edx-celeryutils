@@ -49,7 +49,7 @@ class FailedTask(TimeStampedModel):
         """
         if self.datetime_resolved is not None:
             raise TypeError(f'Cannot reapply a resolved task: {self}')
-        log.info('Reapplying failed task: {}'.format(self))  # pylint: disable=consider-using-f-string
+        log.info('Reapplying failed task: {}'.format(self))
         original_task = current_app.tasks[self.task_name]
         original_task.apply_async(
             self.args,

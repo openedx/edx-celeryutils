@@ -9,7 +9,7 @@ from celery import Celery
 # set the default Django settings module for the 'celery' program.
 os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'test_settings')
 
-app = Celery('proj')  # pylint: disable=invalid-name
+app = Celery('proj')
 
 # Using a string here means the worker don't have to serialize
 # the configuration object to child processes.

@@ -50,7 +50,7 @@ def _truncate_to_field(model, field_name, value):
     insert, so we shorten it, truncating in the middle (because
     valuable information often shows up at the end.
     """
-    field = model._meta.get_field(field_name)  # pylint: disable=protected-access
+    field = model._meta.get_field(field_name)
     if len(value) > field.max_length:
         midpoint = field.max_length // 2
         len_after_midpoint = field.max_length - midpoint

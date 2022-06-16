@@ -79,7 +79,6 @@ def test_duplicate_tasks():
         exc='AlsoThisOtherError()',
     )
     # Verify that only one task got run for this task_id.
-    # pylint: disable=no-member
     with mock.patch.object(tasks.fallible_task, 'apply_async', wraps=tasks.fallible_task.apply_async) as mock_apply:
         call_command('reapply_tasks')
         task_id_counts = Counter(call[2]['task_id'] for call in mock_apply.mock_calls)

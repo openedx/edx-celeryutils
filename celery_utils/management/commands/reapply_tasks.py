@@ -36,8 +36,8 @@ class Command(BaseCommand):
         tasks = FailedTask.objects.filter(datetime_resolved=None)
         if options['task_name'] is not None:
             tasks = tasks.filter(task_name=options['task_name'])
-        log.info('Reapplying {} tasks'.format(tasks.count()))  # pylint: disable=consider-using-f-string
-        log.debug('Reapplied tasks: {}'.format(list(tasks)))  # pylint: disable=consider-using-f-string
+        log.info('Reapplying {} tasks'.format(tasks.count()))
+        log.debug('Reapplied tasks: {}'.format(list(tasks)))
         seen_tasks = set()
         for task in tasks:
             if task.task_id in seen_tasks:
