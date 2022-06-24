@@ -30,7 +30,7 @@ coverage[toml]==6.4.1
 ddt==1.5.0
     # via -r requirements/test.in
     # via
-    #   -c https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt
+    #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
     #   django-model-utils
     #   jsonfield

@@ -36,10 +36,19 @@ docs: ## generate Sphinx HTML documentation, including API docs
 	tox -e docs
 	$(BROWSER) docs/_build/html/index.html
 
+COMMON_CONSTRAINTS_TXT=requirements/common_constraints.txt
+.PHONY: $(COMMON_CONSTRAINTS_TXT)
+$(COMMON_CONSTRAINTS_TXT):
+	wget -O "$(@)" https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt || touch "$(@)"
+
 upgrade: export CUSTOM_COMPILE_COMMAND=make upgrade
-upgrade: ## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
-	pip install -q pip-tools
-	pip-compile --upgrade --allow-unsafe --rebuild -o requirements/pip.txt requirements/pip.in
+upgrade: $(COMMON_CONSTRAINTS_TXT)
+	## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
+	pip install -qr requirements/pip-tools.txt
+	pip-compile --upgrade  --allow-unsafe --rebuild -o requirements/pip.txt requirements/pip.in
+	pip-compile --rebuild  --upgrade -o requirements/pip-tools.txt requirements/pip-tools.in
+	pip install -qr requirements/pip.txt
+	pip install -qr requirements/pip-tools.txt
 	pip-compile --rebuild  --upgrade -o requirements/base.txt requirements/base.in
 	pip-compile --rebuild  --upgrade -o requirements/dev.txt requirements/dev.in requirements/quality.in
 	pip-compile --rebuild  --upgrade -o requirements/doc.txt requirements/base.in requirements/doc.in
