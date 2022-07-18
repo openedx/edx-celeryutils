@@ -129,7 +129,7 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==12.4.4
+rich==12.5.1
     # via twine
 secretstorage==3.3.2
     # via keyring
@@ -162,7 +162,7 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 sqlparse==0.4.2
     # via django
-stevedore==3.5.0
+stevedore==4.0.0
     # via doc8
 tomli==2.0.1
     # via
@@ -172,7 +172,7 @@ twine==4.0.1
     # via -r requirements/doc.in
 typing-extensions==4.3.0
     # via rich
-urllib3==1.26.9
+urllib3==1.26.10
     # via
     #   requests
     #   twine
@@ -185,5 +185,5 @@ wcwidth==0.2.5
     # via prompt-toolkit
 webencodings==0.5.1
     # via bleach
-zipp==3.8.0
+zipp==3.8.1
     # via importlib-metadata
