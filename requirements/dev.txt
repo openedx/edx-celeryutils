@@ -156,7 +156,6 @@ six==1.16.0
     #   edx-lint
     #   pydocstyle
     #   tox
-    #   virtualenv
 snowballstemmer==2.2.0
     # via pydocstyle
 sqlparse==0.4.2
@@ -184,11 +183,11 @@ typing-extensions==4.3.0
     #   astroid
     #   pylint
     #   rich
-urllib3==1.26.10
+urllib3==1.26.11
     # via
     #   requests
     #   twine
-virtualenv==20.15.1
+virtualenv==20.16.2
     # via tox
 webencodings==0.5.1
     # via bleach
