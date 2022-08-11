@@ -81,7 +81,7 @@ jinja2==3.1.2
     # via sphinx
 jsonfield==3.1.0
     # via -r requirements/base.in
-keyring==23.7.0
+keyring==23.8.2
     # via twine
 kombu==5.2.4
     # via celery
@@ -116,7 +116,7 @@ pytz==2022.1
     #   babel
     #   celery
     #   django
-readme-renderer==35.0
+readme-renderer==36.0
     # via twine
 requests==2.28.1
     # via
