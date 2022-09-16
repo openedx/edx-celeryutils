@@ -22,7 +22,7 @@ celery==5.2.7
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-certifi==2022.6.15
+certifi==2022.9.14
     # via requests
 cffi==1.15.1
     # via cryptography
@@ -64,7 +64,7 @@ edx-sphinx-theme==3.0.0
     # via -r requirements/doc.in
 future==0.18.2
     # via -r requirements/base.in
-idna==3.3
+idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
