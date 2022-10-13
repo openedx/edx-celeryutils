@@ -4,7 +4,7 @@
 #
 #    make upgrade
 #
-astroid==2.12.10
+astroid==2.12.11
     # via
     #   pylint
     #   pylint-celery
@@ -41,7 +41,7 @@ pycodestyle==2.9.1
     # via -r requirements/quality.in
 pydocstyle==3.0.0
     # via -r requirements/quality.in
-pylint==2.15.3
+pylint==2.15.4
     # via
     #   edx-lint
     #   pylint-celery
@@ -73,7 +73,7 @@ tomli==2.0.1
     # via pylint
 tomlkit==0.11.5
     # via pylint
-typing-extensions==4.3.0
+typing-extensions==4.4.0
     # via
     #   astroid
     #   pylint
