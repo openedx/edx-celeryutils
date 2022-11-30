@@ -101,7 +101,7 @@ detect_changed_source_translations:
 	cd edx-celeryutils && i18n_tool changed
 
 pull_translations: ## pull translations from Transifex
-	tx pull -af
+	tx pull -t -af
 
 push_translations: ## push source translation files (.po) from Transifex
 	tx push -s
