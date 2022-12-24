@@ -8,7 +8,7 @@ alabaster==0.7.12
     # via sphinx
 amqp==5.1.1
     # via kombu
-asgiref==3.5.2
+asgiref==3.6.0
     # via django
 babel==2.11.0
     # via sphinx
@@ -68,11 +68,13 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==5.1.0
+importlib-metadata==5.2.0
     # via
     #   keyring
     #   sphinx
     #   twine
+importlib-resources==5.10.1
+    # via keyring
 jaraco-classes==3.2.3
     # via keyring
 jeepney==0.8.0
@@ -83,7 +85,7 @@ jinja2==3.1.2
     # via sphinx
 jsonfield==3.1.0
     # via -r requirements/base.in
-keyring==23.11.0
+keyring==23.13.1
     # via twine
 kombu==5.2.4
     # via celery
@@ -113,7 +115,7 @@ pygments==2.13.0
     #   readme-renderer
     #   rich
     #   sphinx
-pytz==2022.6
+pytz==2022.7
     # via
     #   babel
     #   celery
@@ -189,4 +191,6 @@ wcwidth==0.2.5
 webencodings==0.5.1
     # via bleach
 zipp==3.11.0
-    # via importlib-metadata
+    # via
+    #   importlib-metadata
+    #   importlib-resources
