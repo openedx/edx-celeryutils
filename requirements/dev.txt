@@ -6,7 +6,7 @@
 #
 asgiref==3.6.0
     # via django
-astroid==2.12.13
+astroid==2.13.2
     # via
     #   pylint
     #   pylint-celery
@@ -87,13 +87,13 @@ mccabe==0.7.0
     # via pylint
 more-itertools==9.0.0
     # via jaraco-classes
-packaging==22.0
+packaging==23.0
     # via tox
 path==16.6.0
     # via edx-i18n-tools
-pbr==5.11.0
+pbr==5.11.1
     # via stevedore
-pkginfo==1.9.3
+pkginfo==1.9.6
     # via twine
 platformdirs==2.6.2
     # via
@@ -118,7 +118,7 @@ pygments==2.14.0
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==2.15.9
+pylint==2.15.10
     # via
     #   edx-lint
     #   pylint-celery
@@ -150,7 +150,7 @@ requests-toolbelt==0.10.1
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==13.0.0
+rich==13.0.1
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -188,7 +188,7 @@ typing-extensions==4.4.0
     #   astroid
     #   pylint
     #   rich
-urllib3==1.26.13
+urllib3==1.26.14
     # via
     #   requests
     #   twine
