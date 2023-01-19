@@ -15,6 +15,10 @@ Unreleased
 ~~~~~~~~~~
 *
 
+[1.2.2] - 2022-01-24
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Removed future package dependency.
+
 [1.2.1] - 2022-01-24
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Updated celery constraint to <6.0 to fix make upgrade failure in edx-platform
