@@ -2,7 +2,6 @@
 
 -c constraints.txt
 
-future
 celery
 Django >= 1.11
 django-model-utils
