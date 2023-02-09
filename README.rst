@@ -1,4 +1,4 @@
-edx-celeryutils
+edx-celeryutils2
 =============================
 
 .. image:: https://img.shields.io/pypi/v/edx-celeryutils.svg
