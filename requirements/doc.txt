@@ -42,7 +42,7 @@ click-repl==0.2.0
     # via celery
 cryptography==39.0.1
     # via secretstorage
-django==3.2.17
+django==3.2.18
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -167,7 +167,7 @@ sphinxcontrib-serializinghtml==1.1.5
     # via sphinx
 sqlparse==0.4.3
     # via django
-stevedore==4.1.1
+stevedore==5.0.0
     # via doc8
 tomli==2.0.1
     # via
@@ -176,7 +176,7 @@ tomli==2.0.1
     #   pyproject-hooks
 twine==4.0.2
     # via -r requirements/doc.in
-typing-extensions==4.4.0
+typing-extensions==4.5.0
     # via rich
 urllib3==1.26.14
     # via
@@ -191,7 +191,7 @@ wcwidth==0.2.6
     # via prompt-toolkit
 webencodings==0.5.1
     # via bleach
-zipp==3.12.1
+zipp==3.13.0
     # via
     #   importlib-metadata
     #   importlib-resources
