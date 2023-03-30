@@ -4,6 +4,8 @@
 #
 #    make upgrade
 #
+accessible-pygments==0.0.4
+    # via pydata-sphinx-theme
 alabaster==0.7.13
     # via sphinx
 amqp==5.1.1
@@ -11,7 +13,11 @@ amqp==5.1.1
 asgiref==3.6.0
     # via django
 babel==2.12.1
-    # via sphinx
+    # via
+    #   pydata-sphinx-theme
+    #   sphinx
+beautifulsoup4==4.12.2
+    # via pydata-sphinx-theme
 billiard==3.6.4.0
     # via celery
 bleach==6.0.0
@@ -24,6 +30,8 @@ celery==5.2.7
     #   -r requirements/base.in
 certifi==2022.12.7
     # via requests
+cffi==1.15.1
+    # via cryptography
 charset-normalizer==3.1.0
     # via requests
 click==8.1.3
@@ -38,6 +46,8 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.2.0
     # via celery
+cryptography==40.0.2
+    # via secretstorage
 django==3.2.18
     # via
     #   -c requirements/common_constraints.txt
@@ -51,11 +61,10 @@ doc8==1.1.1
 docutils==0.19
     # via
     #   doc8
+    #   pydata-sphinx-theme
     #   readme-renderer
     #   restructuredtext-lint
     #   sphinx
-edx-sphinx-theme==3.1.0
-    # via -r requirements/doc.in
 idna==3.4
     # via requests
 imagesize==1.4.1
@@ -69,6 +78,10 @@ importlib-resources==5.12.0
     # via keyring
 jaraco-classes==3.2.3
     # via keyring
+jeepney==0.8.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.2
     # via sphinx
 jsonfield==3.1.0
@@ -88,6 +101,7 @@ more-itertools==9.1.0
 packaging==23.1
     # via
     #   build
+    #   pydata-sphinx-theme
     #   sphinx
 pbr==5.11.1
     # via stevedore
@@ -97,9 +111,15 @@ pockets==0.9.1
     # via sphinxcontrib-napoleon
 prompt-toolkit==3.0.38
     # via click-repl
+pycparser==2.21
+    # via cffi
+pydata-sphinx-theme==0.13.3
+    # via sphinx-book-theme
 pygments==2.15.0
     # via
+    #   accessible-pygments
     #   doc8
+    #   pydata-sphinx-theme
     #   readme-renderer
     #   rich
     #   sphinx
@@ -125,20 +145,26 @@ rfc3986==2.0.0
     # via twine
 rich==13.3.4
     # via twine
+secretstorage==3.3.3
+    # via keyring
 six==1.16.0
     # via
     #   bleach
     #   click-repl
-    #   edx-sphinx-theme
     #   pockets
     #   sphinxcontrib-napoleon
 snowballstemmer==2.2.0
     # via sphinx
+soupsieve==2.4.1
+    # via beautifulsoup4
 sphinx==5.3.0
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
-    #   edx-sphinx-theme
+    #   pydata-sphinx-theme
+    #   sphinx-book-theme
+sphinx-book-theme==1.0.1
+    # via -r requirements/doc.in
 sphinxcontrib-applehelp==1.0.4
     # via sphinx
 sphinxcontrib-devhelp==1.0.2
@@ -165,7 +191,9 @@ tomli==2.0.1
 twine==4.0.2
     # via -r requirements/doc.in
 typing-extensions==4.5.0
-    # via rich
+    # via
+    #   pydata-sphinx-theme
+    #   rich
 urllib3==1.26.15
     # via
     #   requests
