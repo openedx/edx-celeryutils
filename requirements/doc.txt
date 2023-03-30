@@ -40,7 +40,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.2.0
     # via celery
-cryptography==39.0.2
+cryptography==40.0.1
     # via secretstorage
 django==3.2.18
     # via
@@ -64,7 +64,7 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==6.0.0
+importlib-metadata==6.1.0
     # via
     #   keyring
     #   sphinx
@@ -115,7 +115,7 @@ pygments==2.14.0
     #   sphinx
 pyproject-hooks==1.0.0
     # via build
-pytz==2022.7.1
+pytz==2023.3
     # via
     #   babel
     #   celery
@@ -133,7 +133,7 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==13.3.2
+rich==13.3.3
     # via twine
 secretstorage==3.3.3
     # via keyring
