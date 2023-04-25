@@ -13,7 +13,9 @@ Change Log
 
 Unreleased
 ~~~~~~~~~~
-*
+
+* Switch from ``edx-sphinx-theme`` to ``sphinx-book-theme`` since the former is
+  deprecated
 
 [1.2.2] - 2022-01-24
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
