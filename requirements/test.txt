@@ -5,7 +5,7 @@
 #    make upgrade
 #
     # via kombu
-asgiref==3.6.0
+asgiref==3.7.1
     # via django
     # via celery
     # via
@@ -23,7 +23,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.2.0
     # via celery
-coverage[toml]==7.2.5
+coverage[toml]==7.2.6
     # via pytest-cov
 ddt==1.6.0
     # via -r requirements/test.in
@@ -55,7 +55,7 @@ pytest==7.3.1
     # via
     #   pytest-cov
     #   pytest-django
-pytest-cov==4.0.0
+pytest-cov==4.1.0
     # via -r requirements/test.in
 pytest-django==4.5.2
     # via -r requirements/test.in
@@ -78,6 +78,8 @@ tomli==2.0.1
     # via
     #   coverage
     #   pytest
+typing-extensions==4.6.1
+    # via asgiref
     # via
     #   amqp
     #   celery
