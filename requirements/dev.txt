@@ -29,7 +29,7 @@ click-log==0.4.0
     # via edx-lint
 code-annotations==1.3.0
     # via edx-lint
-cryptography==41.0.0
+cryptography==41.0.1
     # via secretstorage
 diff-cover==7.5.0
     # via -r requirements/dev.in
@@ -81,7 +81,7 @@ lazy-object-proxy==1.9.0
     # via astroid
 markdown-it-py==2.2.0
     # via rich
-markupsafe==2.1.2
+markupsafe==2.1.3
     # via jinja2
 mccabe==0.7.0
     # via pylint
@@ -185,13 +185,13 @@ tox-battery==0.6.1
     # via -r requirements/dev.in
 twine==4.0.2
     # via -r requirements/dev.in
-typing-extensions==4.6.2
+typing-extensions==4.6.3
     # via
     #   asgiref
     #   astroid
     #   pylint
     #   rich
-urllib3==2.0.2
+urllib3==2.0.3
     # via
     #   requests
     #   twine

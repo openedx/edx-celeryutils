@@ -7,6 +7,10 @@
     # via kombu
 asgiref==3.7.2
     # via django
+backports-zoneinfo[tzdata]==0.2.1
+    # via
+    #   celery
+    #   kombu
     # via celery
     # via
     #   -c requirements/constraints.txt
@@ -60,13 +64,13 @@ pytest-cov==4.1.0
 pytest-django==4.5.2
     # via -r requirements/test.in
 python-dateutil==2.8.2
-    # via freezegun
+    # via
+    #   celery
+    #   freezegun
 python-memcached==1.59
     # via -r requirements/test.in
 pytz==2023.3
-    # via
-    #   celery
-    #   django
+    # via django
 six==1.16.0
     # via
     #   click-repl
@@ -78,8 +82,14 @@ tomli==2.0.1
     # via
     #   coverage
     #   pytest
-typing-extensions==4.6.2
-    # via asgiref
+typing-extensions==4.6.3
+    # via
+    #   asgiref
+    #   kombu
+tzdata==2023.3
+    # via
+    #   backports-zoneinfo
+    #   celery
     # via
     #   amqp
     #   celery
