@@ -25,7 +25,7 @@ click-didyoumean==0.3.0
     # via celery
 click-plugins==1.1.1
     # via celery
-click-repl==0.2.0
+click-repl==0.3.0
     # via celery
 coverage[toml]==7.2.7
     # via pytest-cov
@@ -51,7 +51,7 @@ mock==5.0.2
     # via -r requirements/test.in
 packaging==23.1
     # via pytest
-pluggy==1.0.0
+pluggy==1.2.0
     # via pytest
 prompt-toolkit==3.0.38
     # via click-repl
@@ -73,7 +73,6 @@ pytz==2023.3
     # via django
 six==1.16.0
     # via
-    #   click-repl
     #   python-dateutil
     #   python-memcached
 sqlparse==0.4.4

@@ -28,7 +28,7 @@ bleach==6.0.0
     # via readme-renderer
 build==0.10.0
     # via -r requirements/doc.in
-celery==5.3.0
+celery==5.3.1
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
@@ -48,7 +48,7 @@ click-didyoumean==0.3.0
     # via celery
 click-plugins==1.1.1
     # via celery
-click-repl==0.2.0
+click-repl==0.3.0
     # via celery
 cryptography==41.0.1
     # via secretstorage
@@ -73,7 +73,7 @@ idna==3.4
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==6.6.0
+importlib-metadata==6.7.0
     # via
     #   keyring
     #   sphinx
@@ -90,9 +90,9 @@ jinja2==3.1.2
     # via sphinx
 jsonfield==3.1.0
     # via -r requirements/base.in
-keyring==23.13.1
+keyring==24.0.1
     # via twine
-kombu==5.3.0
+kombu==5.3.1
     # via celery
 markdown-it-py==3.0.0
     # via rich
@@ -135,7 +135,7 @@ pytz==2023.3
     # via
     #   babel
     #   django
-readme-renderer==37.3
+readme-renderer==40.0
     # via twine
 requests==2.31.0
     # via
@@ -155,7 +155,6 @@ secretstorage==3.3.3
 six==1.16.0
     # via
     #   bleach
-    #   click-repl
     #   pockets
     #   python-dateutil
     #   sphinxcontrib-napoleon
@@ -163,9 +162,8 @@ snowballstemmer==2.2.0
     # via sphinx
 soupsieve==2.4.1
     # via beautifulsoup4
-sphinx==5.3.0
+sphinx==6.2.1
     # via
-    #   -c requirements/common_constraints.txt
     #   -r requirements/doc.in
     #   pydata-sphinx-theme
     #   sphinx-book-theme
