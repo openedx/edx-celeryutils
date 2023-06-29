@@ -90,7 +90,7 @@ jinja2==3.1.2
     # via sphinx
 jsonfield==3.1.0
     # via -r requirements/base.in
-keyring==24.0.1
+keyring==24.2.0
     # via twine
 kombu==5.3.1
     # via celery
@@ -194,7 +194,7 @@ tomli==2.0.1
     #   pyproject-hooks
 twine==4.0.2
     # via -r requirements/doc.in
-typing-extensions==4.6.3
+typing-extensions==4.7.0
     # via
     #   asgiref
     #   kombu
