@@ -37,7 +37,7 @@ dill==0.3.6
     # via pylint
 distlib==0.3.6
     # via virtualenv
-django==3.2.19
+django==3.2.20
     # via
     #   -c requirements/common_constraints.txt
     #   edx-i18n-tools
@@ -185,7 +185,7 @@ tox-battery==0.6.1
     # via -r requirements/dev.in
 twine==4.0.2
     # via -r requirements/dev.in
-typing-extensions==4.7.0
+typing-extensions==4.7.1
     # via
     #   asgiref
     #   astroid
