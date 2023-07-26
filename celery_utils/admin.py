@@ -7,7 +7,6 @@ from django.contrib import admin
 from .models import FailedTask
 
 
-@admin.register(FailedTask)
 class FailedTaskAdmin(admin.ModelAdmin):
     """
     Customized admin for the FailedTask model.
@@ -18,3 +17,4 @@ class FailedTaskAdmin(admin.ModelAdmin):
     search_fields = ['task_name', 'task_id', 'args', 'kwargs']
 
 
+admin.site.register(FailedTask, FailedTaskAdmin)
