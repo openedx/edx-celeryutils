@@ -15,7 +15,7 @@ backports-zoneinfo[tzdata]==0.2.1
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-click==8.1.4
+click==8.1.6
     # via
     #   celery
     #   click-didyoumean
