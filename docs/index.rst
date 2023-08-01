@@ -16,7 +16,6 @@ Contents:
    getting_started
    modules
    testing
-   internationalization
    changelog
 
 
