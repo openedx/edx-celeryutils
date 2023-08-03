@@ -16,7 +16,7 @@ certifi==2023.7.22
     # via requests
 cffi==1.15.1
     # via cryptography
-chardet==5.1.0
+chardet==5.2.0
     # via diff-cover
 charset-normalizer==3.2.0
     # via requests
@@ -29,7 +29,7 @@ click-log==0.4.0
     # via edx-lint
 code-annotations==1.5.0
     # via edx-lint
-cryptography==41.0.2
+cryptography==41.0.3
     # via secretstorage
 diff-cover==7.7.0
     # via -r requirements/dev.in
@@ -43,7 +43,7 @@ django==3.2.20
     #   edx-i18n-tools
 docutils==0.20.1
     # via readme-renderer
-edx-i18n-tools==1.0.0
+edx-i18n-tools==1.1.0
     # via -r requirements/dev.in
 edx-lint==5.3.4
     # via
@@ -97,7 +97,7 @@ pbr==5.11.1
     # via stevedore
 pkginfo==1.9.6
     # via twine
-platformdirs==3.9.1
+platformdirs==3.10.0
     # via
     #   pylint
     #   virtualenv
@@ -109,7 +109,7 @@ polib==1.2.0
     # via edx-i18n-tools
 py==1.11.0
     # via tox
-pycodestyle==2.10.0
+pycodestyle==2.11.0
     # via -r requirements/quality.in
 pycparser==2.21
     # via cffi
@@ -152,7 +152,7 @@ requests-toolbelt==1.0.0
     # via twine
 rfc3986==2.0.0
     # via twine
-rich==13.4.2
+rich==13.5.2
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -174,7 +174,7 @@ tomli==2.0.1
     # via
     #   pylint
     #   tox
-tomlkit==0.11.8
+tomlkit==0.12.1
     # via pylint
 tox==3.28.0
     # via
