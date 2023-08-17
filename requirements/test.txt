@@ -27,7 +27,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-coverage[toml]==7.2.7
+coverage[toml]==7.3.0
     # via pytest-cov
 ddt==1.6.0
     # via -r requirements/test.in
@@ -38,7 +38,7 @@ ddt==1.6.0
     #   jsonfield
 django-model-utils==4.3.1
     # via -r requirements/base.in
-exceptiongroup==1.1.2
+exceptiongroup==1.1.3
     # via pytest
 freezegun==1.2.2
     # via -r requirements/test.in
