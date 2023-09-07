@@ -37,7 +37,7 @@ dill==0.3.7
     # via pylint
 distlib==0.3.7
     # via virtualenv
-django==3.2.20
+django==3.2.21
     # via
     #   -c requirements/common_constraints.txt
     #   edx-i18n-tools
@@ -136,7 +136,7 @@ pylint-plugin-utils==0.8.2
     #   pylint-django
 python-slugify==8.0.1
     # via code-annotations
-pytz==2023.3
+pytz==2023.3.post1
     # via django
 pyyaml==6.0.1
     # via
