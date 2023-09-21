@@ -24,8 +24,6 @@ beautifulsoup4==4.12.2
     # via pydata-sphinx-theme
 billiard==4.1.0
     # via celery
-bleach==6.0.0
-    # via readme-renderer
 build==1.0.3
     # via -r requirements/doc.in
 celery==5.3.4
@@ -50,7 +48,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==41.0.3
+cryptography==41.0.4
     # via secretstorage
 django==3.2.21
     # via
@@ -79,7 +77,7 @@ importlib-metadata==6.8.0
     #   keyring
     #   sphinx
     #   twine
-importlib-resources==6.0.1
+importlib-resources==6.1.0
     # via keyring
 jaraco-classes==3.3.0
     # via keyring
@@ -103,6 +101,8 @@ mdurl==0.1.2
     # via markdown-it-py
 more-itertools==10.1.0
     # via jaraco-classes
+nh3==0.2.14
+    # via readme-renderer
 packaging==23.1
     # via
     #   build
@@ -118,7 +118,7 @@ prompt-toolkit==3.0.39
     # via click-repl
 pycparser==2.21
     # via cffi
-pydata-sphinx-theme==0.13.3
+pydata-sphinx-theme==0.14.1
     # via sphinx-book-theme
 pygments==2.16.1
     # via
@@ -136,7 +136,7 @@ pytz==2023.3.post1
     # via
     #   babel
     #   django
-readme-renderer==41.0
+readme-renderer==42.0
     # via twine
 requests==2.31.0
     # via
@@ -149,13 +149,12 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==13.5.2
+rich==13.5.3
     # via twine
 secretstorage==3.3.3
     # via keyring
 six==1.16.0
     # via
-    #   bleach
     #   pockets
     #   python-dateutil
     #   sphinxcontrib-napoleon
@@ -195,7 +194,7 @@ tomli==2.0.1
     #   pyproject-hooks
 twine==4.0.2
     # via -r requirements/doc.in
-typing-extensions==4.7.1
+typing-extensions==4.8.0
     # via
     #   asgiref
     #   kombu
@@ -205,7 +204,7 @@ tzdata==2023.3
     # via
     #   backports-zoneinfo
     #   celery
-urllib3==2.0.4
+urllib3==2.0.5
     # via
     #   requests
     #   twine
@@ -216,9 +215,7 @@ vine==5.0.0
     #   kombu
 wcwidth==0.2.6
     # via prompt-toolkit
-webencodings==0.5.1
-    # via bleach
-zipp==3.16.2
+zipp==3.17.0
     # via
     #   importlib-metadata
     #   importlib-resources
