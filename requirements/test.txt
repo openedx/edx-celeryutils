@@ -27,7 +27,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-coverage[toml]==7.3.1
+coverage[toml]==7.3.2
     # via pytest-cov
 ddt==1.6.0
     # via -r requirements/test.in
@@ -49,7 +49,7 @@ jsonfield==3.1.0
     # via celery
 mock==5.1.0
     # via -r requirements/test.in
-packaging==23.1
+packaging==23.2
     # via pytest
 pluggy==1.3.0
     # via pytest
@@ -93,5 +93,5 @@ tzdata==2023.3
     #   amqp
     #   celery
     #   kombu
-wcwidth==0.2.6
+wcwidth==0.2.8
     # via prompt-toolkit
