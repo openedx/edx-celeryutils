@@ -12,7 +12,7 @@ amqp==5.1.1
     # via kombu
 asgiref==3.7.2
     # via django
-babel==2.12.1
+babel==2.13.0
     # via
     #   pydata-sphinx-theme
     #   sphinx
@@ -32,9 +32,9 @@ celery==5.3.4
     #   -r requirements/base.in
 certifi==2023.7.22
     # via requests
-cffi==1.15.1
+cffi==1.16.0
     # via cryptography
-charset-normalizer==3.2.0
+charset-normalizer==3.3.0
     # via requests
 click==8.1.7
     # via
@@ -50,7 +50,7 @@ click-repl==0.3.0
     # via celery
 cryptography==41.0.4
     # via secretstorage
-django==3.2.21
+django==3.2.22
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -103,7 +103,7 @@ more-itertools==10.1.0
     # via jaraco-classes
 nh3==0.2.14
     # via readme-renderer
-packaging==23.1
+packaging==23.2
     # via
     #   build
     #   pydata-sphinx-theme
@@ -149,7 +149,7 @@ restructuredtext-lint==1.4.0
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==13.5.3
+rich==13.6.0
     # via twine
 secretstorage==3.3.3
     # via keyring
@@ -204,7 +204,7 @@ tzdata==2023.3
     # via
     #   backports-zoneinfo
     #   celery
-urllib3==2.0.5
+urllib3==2.0.6
     # via
     #   requests
     #   twine
@@ -213,7 +213,7 @@ vine==5.0.0
     #   amqp
     #   celery
     #   kombu
-wcwidth==0.2.6
+wcwidth==0.2.8
     # via prompt-toolkit
 zipp==3.17.0
     # via
