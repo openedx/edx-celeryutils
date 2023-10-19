@@ -37,7 +37,7 @@ pbr==5.11.1
     # via stevedore
 platformdirs==3.11.0
     # via pylint
-pycodestyle==2.11.0
+pycodestyle==2.11.1
     # via -r requirements/quality.in
 pydocstyle==3.0.0
     # via -r requirements/quality.in

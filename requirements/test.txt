@@ -28,7 +28,9 @@ click-plugins==1.1.1
 click-repl==0.3.0
     # via celery
 coverage[toml]==7.3.2
-    # via pytest-cov
+    # via
+    #   coverage
+    #   pytest-cov
 ddt==1.6.0
     # via -r requirements/test.in
     # via
