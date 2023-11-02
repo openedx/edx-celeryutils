@@ -19,7 +19,7 @@ code-annotations==1.5.0
     # via edx-lint
 dill==0.3.7
     # via pylint
-edx-lint==5.3.4
+edx-lint==5.3.6
     # via -r requirements/quality.in
 isort==5.12.0
     # via

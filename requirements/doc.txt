@@ -12,7 +12,7 @@ amqp==5.1.1
     # via kombu
 asgiref==3.7.2
     # via django
-babel==2.13.0
+babel==2.13.1
     # via
     #   pydata-sphinx-theme
     #   sphinx
@@ -34,7 +34,7 @@ certifi==2023.7.22
     # via requests
 cffi==1.16.0
     # via cryptography
-charset-normalizer==3.3.1
+charset-normalizer==3.3.2
     # via requests
 click==8.1.7
     # via
@@ -48,9 +48,9 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==41.0.4
+cryptography==41.0.5
     # via secretstorage
-django==3.2.22
+django==3.2.23
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -118,7 +118,7 @@ prompt-toolkit==3.0.39
     # via click-repl
 pycparser==2.21
     # via cffi
-pydata-sphinx-theme==0.14.1
+pydata-sphinx-theme==0.14.3
     # via sphinx-book-theme
 pygments==2.16.1
     # via
@@ -213,7 +213,7 @@ vine==5.0.0
     #   amqp
     #   celery
     #   kombu
-wcwidth==0.2.8
+wcwidth==0.2.9
     # via prompt-toolkit
 zipp==3.17.0
     # via
