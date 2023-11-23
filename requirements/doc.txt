@@ -26,11 +26,11 @@ billiard==4.2.0
     # via celery
 build==1.0.3
     # via -r requirements/doc.in
-celery==5.3.5
+celery==5.3.6
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-certifi==2023.7.22
+certifi==2023.11.17
     # via requests
 cffi==1.16.0
     # via cryptography
@@ -91,7 +91,7 @@ jsonfield==3.1.0
     # via -r requirements/base.in
 keyring==24.3.0
     # via twine
-kombu==5.3.3
+kombu==5.3.4
     # via celery
 markdown-it-py==3.0.0
     # via rich
@@ -120,7 +120,7 @@ pycparser==2.21
     # via cffi
 pydata-sphinx-theme==0.14.3
     # via sphinx-book-theme
-pygments==2.16.1
+pygments==2.17.2
     # via
     #   accessible-pygments
     #   doc8
@@ -213,7 +213,7 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-wcwidth==0.2.10
+wcwidth==0.2.12
     # via prompt-toolkit
 zipp==3.17.0
     # via
