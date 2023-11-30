@@ -33,7 +33,7 @@ code-annotations==1.5.0
     # via edx-lint
 colorama==0.4.6
     # via tox
-cryptography==41.0.5
+cryptography==41.0.7
     # via secretstorage
 diff-cover==8.0.1
     # via -r requirements/dev.in
@@ -57,7 +57,7 @@ filelock==3.13.1
     # via
     #   tox
     #   virtualenv
-idna==3.4
+idna==3.6
     # via requests
 importlib-metadata==6.8.0
     # via
@@ -185,7 +185,7 @@ tomli==2.0.1
     #   tox
 tomlkit==0.12.3
     # via pylint
-tox==4.11.3
+tox==4.11.4
     # via -r requirements/dev.in
 twine==4.0.2
     # via -r requirements/dev.in
@@ -201,7 +201,7 @@ urllib3==2.1.0
     #   twine
 virtualenv==20.24.7
     # via tox
-wheel==0.41.3
+wheel==0.42.0
     # via -r requirements/dev.in
 zipp==3.17.0
     # via
