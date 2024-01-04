@@ -71,7 +71,7 @@ idna==3.6
     # via requests
 imagesize==1.4.1
     # via sphinx
-importlib-metadata==7.0.0
+importlib-metadata==7.0.1
     # via
     #   build
     #   keyring
@@ -200,7 +200,7 @@ typing-extensions==4.9.0
     #   kombu
     #   pydata-sphinx-theme
     #   rich
-tzdata==2023.3
+tzdata==2023.4
     # via
     #   backports-zoneinfo
     #   celery
