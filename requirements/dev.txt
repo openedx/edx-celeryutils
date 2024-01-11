@@ -59,7 +59,7 @@ filelock==3.13.1
     #   virtualenv
 idna==3.6
     # via requests
-importlib-metadata==7.0.0
+importlib-metadata==7.0.1
     # via
     #   keyring
     #   twine
@@ -75,13 +75,13 @@ jeepney==0.8.0
     # via
     #   keyring
     #   secretstorage
-jinja2==3.1.2
+jinja2==3.1.3
     # via
     #   code-annotations
     #   diff-cover
 keyring==24.3.0
     # via twine
-lxml==4.9.4
+lxml==5.1.0
     # via edx-i18n-tools
 markdown-it-py==3.0.0
     # via rich
@@ -91,7 +91,7 @@ mccabe==0.7.0
     # via pylint
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.1.0
+more-itertools==10.2.0
     # via jaraco-classes
 nh3==0.2.15
     # via readme-renderer
