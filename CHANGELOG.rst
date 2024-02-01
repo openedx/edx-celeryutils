@@ -14,7 +14,9 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
-
+[1.2.5] - 2024-02-01
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Ran django-upgrade tool to add support for Django 4.2 in missing files.
 
 [1.2.3] - 2023-06-15
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
