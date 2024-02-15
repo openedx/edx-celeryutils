@@ -14,6 +14,8 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
+* Add support for Python 3.11 & 3.12
+
 [1.2.5] - 2024-02-01
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Ran django-upgrade tool to add support for Django 4.2 in missing files.
