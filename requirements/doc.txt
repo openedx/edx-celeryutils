@@ -48,7 +48,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==42.0.2
+cryptography==42.0.4
     # via secretstorage
 django==3.2.24
     # via
@@ -204,7 +204,7 @@ tzdata==2024.1
     # via
     #   backports-zoneinfo
     #   celery
-urllib3==2.2.0
+urllib3==2.2.1
     # via
     #   requests
     #   twine
