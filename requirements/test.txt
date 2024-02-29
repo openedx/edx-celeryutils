@@ -27,9 +27,9 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-coverage[toml]==7.4.2
+coverage[toml]==7.4.3
     # via pytest-cov
-ddt==1.7.1
+ddt==1.7.2
     # via -r requirements/test.in
     # via
     #   -c requirements/common_constraints.txt
@@ -55,7 +55,7 @@ pluggy==1.4.0
     # via pytest
 prompt-toolkit==3.0.43
     # via click-repl
-pytest==8.0.1
+pytest==8.0.2
     # via
     #   pytest-cov
     #   pytest-django
@@ -79,7 +79,7 @@ tomli==2.0.1
     # via
     #   coverage
     #   pytest
-typing-extensions==4.9.0
+typing-extensions==4.10.0
     # via
     #   asgiref
     #   kombu
