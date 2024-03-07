@@ -11,6 +11,7 @@ asgiref==3.7.2
 backports-zoneinfo[tzdata]==0.2.1
     # via
     #   celery
+    #   django
     #   kombu
 billiard==4.2.0
     # via celery
@@ -30,7 +31,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-django==3.2.24
+django==4.2.11
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -44,10 +45,8 @@ kombu==5.3.5
     # via celery
 prompt-toolkit==3.0.43
     # via click-repl
-python-dateutil==2.8.2
+python-dateutil==2.9.0.post0
     # via celery
-pytz==2024.1
-    # via django
 six==1.16.0
     # via python-dateutil
 sqlparse==0.4.4

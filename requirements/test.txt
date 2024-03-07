@@ -10,6 +10,7 @@ asgiref==3.7.2
 backports-zoneinfo[tzdata]==0.2.1
     # via
     #   celery
+    #   django
     #   kombu
     # via celery
     # via
@@ -63,14 +64,12 @@ pytest-cov==4.1.0
     # via -r requirements/test.in
 pytest-django==4.8.0
     # via -r requirements/test.in
-python-dateutil==2.8.2
+python-dateutil==2.9.0.post0
     # via
     #   celery
     #   freezegun
 python-memcached==1.62
     # via -r requirements/test.in
-pytz==2024.1
-    # via django
 six==1.16.0
     # via python-dateutil
 sqlparse==0.4.4

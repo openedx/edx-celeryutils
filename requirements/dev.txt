@@ -10,6 +10,8 @@ astroid==3.1.0
     # via
     #   pylint
     #   pylint-celery
+backports-zoneinfo==0.2.1
+    # via django
 cachetools==5.3.3
     # via tox
 certifi==2024.2.2
@@ -41,7 +43,7 @@ dill==0.3.8
     # via pylint
 distlib==0.3.8
     # via virtualenv
-django==3.2.24
+django==4.2.11
     # via
     #   -c requirements/common_constraints.txt
     #   edx-i18n-tools
@@ -103,7 +105,7 @@ path==16.10.0
     # via edx-i18n-tools
 pbr==6.0.0
     # via stevedore
-pkginfo==1.9.6
+pkginfo==1.10.0
     # via twine
 platformdirs==4.2.0
     # via
@@ -145,8 +147,6 @@ pyproject-api==1.6.1
     # via tox
 python-slugify==8.0.4
     # via code-annotations
-pytz==2024.1
-    # via django
 pyyaml==6.0.1
     # via
     #   code-annotations
@@ -184,7 +184,7 @@ tomli==2.0.1
     #   tox
 tomlkit==0.12.4
     # via pylint
-tox==4.13.0
+tox==4.14.1
     # via -r requirements/dev.in
 twine==5.0.0
     # via -r requirements/dev.in
