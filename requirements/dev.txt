@@ -10,6 +10,8 @@ astroid==3.1.0
     # via
     #   pylint
     #   pylint-celery
+backports-zoneinfo==0.2.1
+    # via django
 cachetools==5.3.3
     # via tox
 certifi==2024.2.2
@@ -41,7 +43,7 @@ dill==0.3.8
     # via pylint
 distlib==0.3.8
     # via virtualenv
-django==3.2.24
+django==4.2.11
     # via
     #   -c requirements/common_constraints.txt
     #   edx-i18n-tools
@@ -59,11 +61,12 @@ filelock==3.13.1
     #   virtualenv
 idna==3.6
     # via requests
-importlib-metadata==7.0.1
+importlib-metadata==6.11.0
     # via
+    #   -c requirements/common_constraints.txt
     #   keyring
     #   twine
-importlib-resources==6.1.2
+importlib-resources==6.3.0
     # via keyring
 isort==5.13.2
     # via
@@ -95,7 +98,7 @@ more-itertools==10.2.0
     # via jaraco-classes
 nh3==0.2.15
     # via readme-renderer
-packaging==23.2
+packaging==24.0
     # via
     #   pyproject-api
     #   tox
@@ -103,7 +106,7 @@ path==16.10.0
     # via edx-i18n-tools
 pbr==6.0.0
     # via stevedore
-pkginfo==1.9.6
+pkginfo==1.10.0
     # via twine
 platformdirs==4.2.0
     # via
@@ -145,8 +148,6 @@ pyproject-api==1.6.1
     # via tox
 python-slugify==8.0.4
     # via code-annotations
-pytz==2024.1
-    # via django
 pyyaml==6.0.1
     # via
     #   code-annotations
@@ -184,7 +185,7 @@ tomli==2.0.1
     #   tox
 tomlkit==0.12.4
     # via pylint
-tox==4.13.0
+tox==4.14.1
     # via -r requirements/dev.in
 twine==5.0.0
     # via -r requirements/dev.in
@@ -200,9 +201,9 @@ urllib3==2.2.1
     #   twine
 virtualenv==20.25.1
     # via tox
-wheel==0.42.0
+wheel==0.43.0
     # via -r requirements/dev.in
-zipp==3.17.0
+zipp==3.18.0
     # via
     #   importlib-metadata
     #   importlib-resources
