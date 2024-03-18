@@ -16,8 +16,8 @@ billiard==4.2.0
     # via celery
 celery==5.3.6
     # via
-    #   -c requirements/constraints.txt
-    #   -r requirements/base.in
+    #   -c constraints.txt
+    #   -r base.in
 click==8.1.7
     # via
     #   celery
@@ -30,16 +30,16 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-django==3.2.24
+django==3.2.25
     # via
-    #   -c requirements/common_constraints.txt
-    #   -r requirements/base.in
+    #   -c common_constraints.txt
+    #   -r base.in
     #   django-model-utils
     #   jsonfield
 django-model-utils==4.4.0
-    # via -r requirements/base.in
+    # via -r base.in
 jsonfield==3.1.0
-    # via -r requirements/base.in
+    # via -r base.in
 kombu==5.3.5
     # via celery
 prompt-toolkit==3.0.43
