@@ -5,11 +5,12 @@
 #    make upgrade
 #
     # via kombu
-asgiref==3.7.2
+asgiref==3.8.0
     # via django
 backports-zoneinfo[tzdata]==0.2.1
     # via
     #   celery
+    #   django
     #   kombu
     # via celery
     # via
@@ -27,7 +28,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-coverage[toml]==7.4.3
+coverage[toml]==7.4.4
     # via pytest-cov
 ddt==1.7.2
     # via -r requirements/test.in
@@ -49,13 +50,13 @@ jsonfield==3.1.0
     # via celery
 mock==5.1.0
     # via -r requirements/test.in
-packaging==23.2
+packaging==24.0
     # via pytest
 pluggy==1.4.0
     # via pytest
 prompt-toolkit==3.0.43
     # via click-repl
-pytest==8.0.2
+pytest==8.1.1
     # via
     #   pytest-cov
     #   pytest-django
@@ -63,14 +64,12 @@ pytest-cov==4.1.0
     # via -r requirements/test.in
 pytest-django==4.8.0
     # via -r requirements/test.in
-python-dateutil==2.8.2
+python-dateutil==2.9.0.post0
     # via
     #   celery
     #   freezegun
 python-memcached==1.62
     # via -r requirements/test.in
-pytz==2024.1
-    # via django
 six==1.16.0
     # via python-dateutil
 sqlparse==0.4.4
