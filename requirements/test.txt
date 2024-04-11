@@ -38,7 +38,7 @@ ddt==1.7.2
     #   -r requirements/base.in
     #   django-model-utils
     #   jsonfield
-django-model-utils==4.4.0
+django-model-utils==4.5.0
     # via -r requirements/base.in
 exceptiongroup==1.2.0
     # via pytest
@@ -79,7 +79,7 @@ tomli==2.0.1
     # via
     #   coverage
     #   pytest
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via
     #   asgiref
     #   kombu
