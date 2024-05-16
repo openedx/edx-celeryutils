@@ -29,7 +29,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-coverage[toml]==7.4.4
+coverage[toml]==7.5.1
     # via pytest-cov
 ddt==1.7.2
     # via -r requirements/test.in
@@ -38,11 +38,11 @@ ddt==1.7.2
     #   -r requirements/base.in
     #   django-model-utils
     #   jsonfield
-django-model-utils==4.4.0
+django-model-utils==4.5.1
     # via -r requirements/base.in
-exceptiongroup==1.2.0
+exceptiongroup==1.2.1
     # via pytest
-freezegun==1.4.0
+freezegun==1.5.1
     # via -r requirements/test.in
 iniconfig==2.0.0
     # via pytest
@@ -53,11 +53,11 @@ mock==5.1.0
     # via -r requirements/test.in
 packaging==24.0
     # via pytest
-pluggy==1.4.0
+pluggy==1.5.0
     # via pytest
 prompt-toolkit==3.0.43
     # via click-repl
-pytest==8.1.1
+pytest==8.2.0
     # via
     #   pytest-cov
     #   pytest-django
@@ -73,13 +73,13 @@ python-memcached==1.62
     # via -r requirements/test.in
 six==1.16.0
     # via python-dateutil
-sqlparse==0.4.4
+sqlparse==0.5.0
     # via django
 tomli==2.0.1
     # via
     #   coverage
     #   pytest
-typing-extensions==4.10.0
+typing-extensions==4.11.0
     # via
     #   asgiref
     #   kombu
