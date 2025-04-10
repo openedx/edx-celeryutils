@@ -2,4 +2,4 @@
 Code to support working with celery.
 """
 
-__version__ = '1.3.0'
+__version__ = '1.4.0'

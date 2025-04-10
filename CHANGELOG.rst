@@ -14,6 +14,9 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
+[1.4.0] - 2024-03-31
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+* Added django5.2 support. Adding new migration with index_together change.
 * Dropped Python 3.8 support
 
 [1.3.0] - 2024-03-31
