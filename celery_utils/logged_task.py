@@ -30,7 +30,7 @@ class LoggedTask(Task):
         ))
         return result
 
-    def on_retry(self, exc, task_id, args, kwargs, einfo):  # pylint: disable=too-many-positional-arguments
+    def on_retry(self, exc, task_id, args, kwargs, einfo):
         """
         Capture the exception that caused the task to be retried, if any.
         """
@@ -41,7 +41,7 @@ class LoggedTask(Task):
             )
         )
 
-    def on_failure(self, exc, task_id, args, kwargs, einfo):  # pylint: disable=too-many-positional-arguments
+    def on_failure(self, exc, task_id, args, kwargs, einfo):
         """
         Capture the exception that caused the task to fail, if any.
         """
