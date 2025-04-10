@@ -18,7 +18,7 @@ class PersistOnFailureTask(Task):
     abstract = True
     typing = False
 
-    def on_failure(self, exc, task_id, args, kwargs, einfo): 
+    def on_failure(self, exc, task_id, args, kwargs, einfo):
         """
         If the task fails, persist a record of the task.
         """
