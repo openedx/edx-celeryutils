@@ -8,3 +8,4 @@ disable = cyclic-import
 disable+ =
     logging-format-interpolation,
     useless-suppression,
+    too-many-positional-arguments
