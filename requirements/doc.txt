@@ -18,7 +18,7 @@ babel==2.17.0
     #   sphinx
 backports-tarfile==1.2.0
     # via jaraco-context
-beautifulsoup4==4.13.3
+beautifulsoup4==4.13.4
     # via pydata-sphinx-theme
 billiard==4.2.1
     # via celery
@@ -30,6 +30,8 @@ celery==5.5.1
     #   -r requirements/base.in
 certifi==2025.1.31
     # via requests
+cffi==1.17.1
+    # via cryptography
 charset-normalizer==3.4.1
     # via requests
 click==8.1.8
@@ -44,6 +46,8 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
+cryptography==44.0.2
+    # via secretstorage
 django==4.2.20
     # via
     #   -c requirements/common_constraints.txt
@@ -75,13 +79,17 @@ jaraco-context==6.0.1
     # via keyring
 jaraco-functools==4.1.0
     # via keyring
+jeepney==0.9.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.6
     # via sphinx
 jsonfield==3.1.0
     # via -r requirements/base.in
 keyring==25.6.0
     # via twine
-kombu==5.5.2
+kombu==5.5.3
     # via celery
 markdown-it-py==3.0.0
     # via rich
@@ -105,8 +113,10 @@ pbr==6.1.1
     # via stevedore
 pockets==0.9.1
     # via sphinxcontrib-napoleon
-prompt-toolkit==3.0.50
+prompt-toolkit==3.0.51
     # via click-repl
+pycparser==2.22
+    # via cffi
 pydata-sphinx-theme==0.15.4
     # via sphinx-book-theme
 pygments==2.19.1
@@ -139,6 +149,8 @@ rich==14.0.0
     # via twine
 roman-numerals-py==3.1.0
     # via sphinx
+secretstorage==3.3.3
+    # via keyring
 six==1.17.0
     # via
     #   pockets
@@ -175,7 +187,7 @@ stevedore==5.4.1
     # via doc8
 twine==6.1.0
     # via -r requirements/doc.in
-typing-extensions==4.13.1
+typing-extensions==4.13.2
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme

@@ -47,7 +47,7 @@ packaging==24.2
     # via pytest
 pluggy==1.5.0
     # via pytest
-prompt-toolkit==3.0.50
+prompt-toolkit==3.0.51
     # via click-repl
 pytest==8.3.5
     # via

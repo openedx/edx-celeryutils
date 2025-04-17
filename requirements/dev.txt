@@ -16,6 +16,8 @@ cachetools==5.5.2
     # via tox
 certifi==2025.1.31
     # via requests
+cffi==1.17.1
+    # via cryptography
 chardet==5.2.0
     # via
     #   diff-cover
@@ -33,9 +35,11 @@ code-annotations==2.3.0
     # via edx-lint
 colorama==0.4.6
     # via tox
+cryptography==44.0.2
+    # via secretstorage
 diff-cover==9.2.4
     # via -r requirements/dev.in
-dill==0.3.9
+dill==0.4.0
     # via pylint
 distlib==0.3.9
     # via virtualenv
@@ -71,6 +75,10 @@ jaraco-context==6.0.1
     # via keyring
 jaraco-functools==4.1.0
     # via keyring
+jeepney==0.9.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.6
     # via
     #   code-annotations
@@ -119,6 +127,8 @@ polib==1.2.0
     # via edx-i18n-tools
 pycodestyle==2.13.0
     # via -r requirements/quality.in
+pycparser==2.22
+    # via cffi
 pydocstyle==3.0.0
     # via -r requirements/quality.in
 pygments==2.19.1
@@ -161,6 +171,8 @@ rfc3986==2.0.0
     # via twine
 rich==14.0.0
     # via twine
+secretstorage==3.3.3
+    # via keyring
 six==1.17.0
     # via
     #   edx-lint
