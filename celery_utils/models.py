@@ -39,8 +39,8 @@ class FailedTask(TimeStampedModel):
         To specify any metadata for FailedTask model.
         """
 
-        index_together = [
-            ('task_name', 'exc'),
+        indexes = [
+            models.Index(fields=['task_name', 'exc'], name='idx_failedtask_task_exc')
         ]
 
     def reapply(self):
