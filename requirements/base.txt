@@ -10,7 +10,7 @@ asgiref==3.8.1
     # via django
 billiard==4.2.1
     # via celery
-celery==5.5.1
+celery==5.5.2
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
@@ -26,7 +26,7 @@ click-plugins==1.1.1
     # via celery
 click-repl==0.3.0
     # via celery
-django==4.2.20
+django==4.2.21
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in

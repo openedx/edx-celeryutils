@@ -14,13 +14,15 @@ backports-tarfile==1.2.0
     # via jaraco-context
 cachetools==5.5.2
     # via tox
-certifi==2025.1.31
+certifi==2025.4.26
     # via requests
+cffi==1.17.1
+    # via cryptography
 chardet==5.2.0
     # via
     #   diff-cover
     #   tox
-charset-normalizer==3.4.1
+charset-normalizer==3.4.2
     # via requests
 click==8.1.8
     # via
@@ -33,19 +35,21 @@ code-annotations==2.3.0
     # via edx-lint
 colorama==0.4.6
     # via tox
+cryptography==44.0.3
+    # via secretstorage
 diff-cover==9.2.4
     # via -r requirements/dev.in
 dill==0.4.0
     # via pylint
 distlib==0.3.9
     # via virtualenv
-django==4.2.20
+django==4.2.21
     # via
     #   -c requirements/common_constraints.txt
     #   edx-i18n-tools
 docutils==0.21.2
     # via readme-renderer
-edx-i18n-tools==1.8.0
+edx-i18n-tools==1.9.0
     # via -r requirements/dev.in
 edx-lint==5.6.0
     # via
@@ -59,7 +63,7 @@ id==1.5.0
     # via twine
 idna==3.10
     # via requests
-importlib-metadata==8.6.1
+importlib-metadata==8.7.0
     # via keyring
 isort==6.0.1
     # via
@@ -71,6 +75,10 @@ jaraco-context==6.0.1
     # via keyring
 jaraco-functools==4.1.0
     # via keyring
+jeepney==0.9.0
+    # via
+    #   keyring
+    #   secretstorage
 jinja2==3.1.6
     # via
     #   code-annotations
@@ -106,7 +114,7 @@ path==16.16.0
     # via edx-i18n-tools
 pbr==6.1.1
     # via stevedore
-platformdirs==4.3.7
+platformdirs==4.3.8
     # via
     #   pylint
     #   tox
@@ -119,6 +127,8 @@ polib==1.2.0
     # via edx-i18n-tools
 pycodestyle==2.13.0
     # via -r requirements/quality.in
+pycparser==2.22
+    # via cffi
 pydocstyle==3.0.0
     # via -r requirements/quality.in
 pygments==2.19.1
@@ -126,7 +136,7 @@ pygments==2.19.1
     #   diff-cover
     #   readme-renderer
     #   rich
-pylint==3.3.6
+pylint==3.3.7
     # via
     #   edx-lint
     #   pylint-celery
@@ -161,6 +171,8 @@ rfc3986==2.0.0
     # via twine
 rich==14.0.0
     # via twine
+secretstorage==3.3.3
+    # via keyring
 six==1.17.0
     # via
     #   edx-lint
@@ -184,7 +196,7 @@ urllib3==2.2.3
     #   -c requirements/common_constraints.txt
     #   requests
     #   twine
-virtualenv==20.30.0
+virtualenv==20.31.1
     # via tox
 wheel==0.45.1
     # via -r requirements/dev.in
