@@ -14,6 +14,8 @@ Change Log
 Unreleased
 ~~~~~~~~~~
 
+* Dropped Django 4.2 support; bumped celery 5.5→5.6.2, jsonfield 3.1→3.2, pip to 26.0.1; loosened Django constraint to <6.0
+
 [1.4.0] - 2024-03-31
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 * Added django5.2 support. Adding new migration with index_together change.
