@@ -20,9 +20,9 @@ beautifulsoup4==4.14.3
     # via pydata-sphinx-theme
 billiard==4.2.4
     # via celery
-build==1.4.0
+build==1.4.2
     # via -r requirements/doc.in
-celery==5.6.2
+celery==5.6.3
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
@@ -30,9 +30,9 @@ certifi==2026.2.25
     # via requests
 cffi==2.0.0
     # via cryptography
-charset-normalizer==3.4.5
+charset-normalizer==3.4.7
     # via requests
-click==8.3.1
+click==8.3.2
     # via
     #   celery
     #   click-didyoumean
@@ -44,9 +44,9 @@ click-plugins==1.1.1.2
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==46.0.5
+cryptography==46.0.6
     # via secretstorage
-django==5.2.12
+django==5.2.13
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -71,7 +71,7 @@ imagesize==2.0.0
     # via sphinx
 jaraco-classes==3.4.0
     # via keyring
-jaraco-context==6.1.0
+jaraco-context==6.1.2
     # via keyring
 jaraco-functools==4.4.0
     # via keyring
@@ -93,17 +93,16 @@ markupsafe==3.0.3
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==10.8.0
+more-itertools==11.0.1
     # via
     #   jaraco-classes
     #   jaraco-functools
-nh3==0.3.3
+nh3==0.3.4
     # via readme-renderer
 packaging==26.0
     # via
     #   build
     #   kombu
-    #   pydata-sphinx-theme
     #   sphinx
     #   twine
 pockets==0.9.1
@@ -112,9 +111,9 @@ prompt-toolkit==3.0.52
     # via click-repl
 pycparser==3.0
     # via cffi
-pydata-sphinx-theme==0.15.4
+pydata-sphinx-theme==0.16.1
     # via sphinx-book-theme
-pygments==2.19.2
+pygments==2.20.0
     # via
     #   accessible-pygments
     #   doc8
@@ -128,7 +127,7 @@ python-dateutil==2.9.0.post0
     # via celery
 readme-renderer==44.0
     # via twine
-requests==2.32.5
+requests==2.33.1
     # via
     #   requests-toolbelt
     #   sphinx
@@ -159,7 +158,7 @@ sphinx==9.1.0
     #   -r requirements/doc.in
     #   pydata-sphinx-theme
     #   sphinx-book-theme
-sphinx-book-theme==1.1.4
+sphinx-book-theme==1.2.0
     # via -r requirements/doc.in
 sphinxcontrib-applehelp==2.0.0
     # via sphinx
@@ -185,7 +184,7 @@ typing-extensions==4.15.0
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
-tzdata==2025.3
+tzdata==2026.1
     # via kombu
 tzlocal==5.3.1
     # via celery
