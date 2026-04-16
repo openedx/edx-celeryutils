@@ -20,7 +20,7 @@ beautifulsoup4==4.14.3
     # via pydata-sphinx-theme
 billiard==4.2.4
     # via celery
-build==1.4.2
+build==1.4.3
     # via -r requirements/doc.in
 celery==5.6.3
     # via
@@ -44,7 +44,7 @@ click-plugins==1.1.1.2
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==46.0.6
+cryptography==46.0.7
     # via secretstorage
 django==5.2.13
     # via
@@ -93,13 +93,13 @@ markupsafe==3.0.3
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==11.0.1
+more-itertools==11.0.2
     # via
     #   jaraco-classes
     #   jaraco-functools
 nh3==0.3.4
     # via readme-renderer
-packaging==26.0
+packaging==26.1
     # via
     #   build
     #   kombu
@@ -138,7 +138,7 @@ restructuredtext-lint==2.0.2
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==14.3.3
+rich==15.0.0
     # via twine
 roman-numerals==4.1.0
     # via sphinx
