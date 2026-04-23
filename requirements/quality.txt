@@ -8,7 +8,7 @@ astroid==4.0.4
     # via
     #   pylint
     #   pylint-celery
-click==8.3.2
+click==8.3.3
     # via
     #   click-log
     #   code-annotations
@@ -31,7 +31,7 @@ markupsafe==3.0.3
     # via jinja2
 mccabe==0.7.0
     # via pylint
-platformdirs==4.9.4
+platformdirs==4.9.6
     # via pylint
 pycodestyle==2.14.0
     # via -r requirements/quality.in
