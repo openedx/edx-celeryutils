@@ -3,6 +3,6 @@
 -c constraints.txt
 
 celery
-Django >= 1.11
+Django >= 5.2.14
 django-model-utils
 jsonfield
