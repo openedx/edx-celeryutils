@@ -16,23 +16,23 @@ babel==2.18.0
     # via
     #   pydata-sphinx-theme
     #   sphinx
-beautifulsoup4==4.14.3
+beautifulsoup4==4.15.0
     # via pydata-sphinx-theme
 billiard==4.2.4
     # via celery
-build==1.4.2
+build==1.5.0
     # via -r requirements/doc.in
 celery==5.6.3
     # via
     #   -c requirements/constraints.txt
     #   -r requirements/base.in
-certifi==2026.2.25
+certifi==2026.6.17
     # via requests
 cffi==2.0.0
     # via cryptography
 charset-normalizer==3.4.7
     # via requests
-click==8.3.2
+click==8.4.2
     # via
     #   celery
     #   click-didyoumean
@@ -44,9 +44,9 @@ click-plugins==1.1.1.2
     # via celery
 click-repl==0.3.0
     # via celery
-cryptography==46.0.6
+cryptography==49.0.0
     # via secretstorage
-django==5.2.13
+django==5.2.15
     # via
     #   -c requirements/common_constraints.txt
     #   -r requirements/base.in
@@ -65,7 +65,7 @@ docutils==0.21.2
     #   sphinx
 id==1.6.1
     # via twine
-idna==3.11
+idna==3.18
     # via requests
 imagesize==2.0.0
     # via sphinx
@@ -73,7 +73,7 @@ jaraco-classes==3.4.0
     # via keyring
 jaraco-context==6.1.2
     # via keyring
-jaraco-functools==4.4.0
+jaraco-functools==4.5.0
     # via keyring
 jeepney==0.9.0
     # via
@@ -87,19 +87,19 @@ keyring==25.7.0
     # via twine
 kombu==5.6.2
     # via celery
-markdown-it-py==4.0.0
+markdown-it-py==4.2.0
     # via rich
 markupsafe==3.0.3
     # via jinja2
 mdurl==0.1.2
     # via markdown-it-py
-more-itertools==11.0.1
+more-itertools==11.1.0
     # via
     #   jaraco-classes
     #   jaraco-functools
-nh3==0.3.4
+nh3==0.3.6
     # via readme-renderer
-packaging==26.0
+packaging==26.2
     # via
     #   build
     #   kombu
@@ -125,9 +125,9 @@ pyproject-hooks==1.2.0
     # via build
 python-dateutil==2.9.0.post0
     # via celery
-readme-renderer==44.0
+readme-renderer==45.0
     # via twine
-requests==2.33.1
+requests==2.34.2
     # via
     #   requests-toolbelt
     #   sphinx
@@ -138,7 +138,7 @@ restructuredtext-lint==2.0.2
     # via doc8
 rfc3986==2.0.0
     # via twine
-rich==14.3.3
+rich==15.0.0
     # via twine
 roman-numerals==4.1.0
     # via sphinx
@@ -149,9 +149,9 @@ six==1.17.0
     #   pockets
     #   python-dateutil
     #   sphinxcontrib-napoleon
-snowballstemmer==3.0.1
+snowballstemmer==3.1.1
     # via sphinx
-soupsieve==2.8.3
+soupsieve==2.8.4
     # via beautifulsoup4
 sphinx==9.1.0
     # via
@@ -176,7 +176,7 @@ sphinxcontrib-serializinghtml==2.0.0
     # via sphinx
 sqlparse==0.5.5
     # via django
-stevedore==5.7.0
+stevedore==5.8.0
     # via doc8
 twine==6.2.0
     # via -r requirements/doc.in
@@ -184,11 +184,11 @@ typing-extensions==4.15.0
     # via
     #   beautifulsoup4
     #   pydata-sphinx-theme
-tzdata==2026.1
+tzdata==2026.2
     # via kombu
-tzlocal==5.3.1
+tzlocal==5.4.4
     # via celery
-urllib3==2.6.3
+urllib3==2.7.0
     # via
     #   id
     #   requests
@@ -198,5 +198,5 @@ vine==5.1.0
     #   amqp
     #   celery
     #   kombu
-wcwidth==0.6.0
+wcwidth==0.8.2
     # via prompt-toolkit
