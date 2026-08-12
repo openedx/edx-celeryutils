@@ -34,23 +34,21 @@ colorama==0.4.6
 cryptography==46.0.6
     # via secretstorage
 diff-cover==10.2.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 dill==0.4.1
     # via pylint
 distlib==0.4.0
     # via virtualenv
 django==5.2.13
     # via
-    #   -c requirements/common_constraints.txt
+    #   -c common_constraints.txt
     #   edx-i18n-tools
 docutils==0.22.4
     # via readme-renderer
 edx-i18n-tools==2.0.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 edx-lint==6.0.0
-    # via
-    #   -r requirements/dev.in
-    #   -r requirements/quality.in
+    # via -r dev.in
 filelock==3.25.2
     # via
     #   python-discovery
@@ -58,12 +56,10 @@ filelock==3.25.2
     #   virtualenv
 id==1.6.1
     # via twine
-idna==3.11
+idna==3.15
     # via requests
 isort==8.0.1
-    # via
-    #   -r requirements/quality.in
-    #   pylint
+    # via pylint
 jaraco-classes==3.4.0
     # via keyring
 jaraco-context==6.1.2
@@ -120,12 +116,8 @@ pluggy==1.6.0
     #   tox
 polib==1.2.0
     # via edx-i18n-tools
-pycodestyle==2.14.0
-    # via -r requirements/quality.in
 pycparser==3.0
     # via cffi
-pydocstyle==3.0.0
-    # via -r requirements/quality.in
 pygments==2.20.0
     # via
     #   diff-cover
@@ -172,11 +164,7 @@ rich==14.3.3
 secretstorage==3.5.0
     # via keyring
 six==1.17.0
-    # via
-    #   edx-lint
-    #   pydocstyle
-snowballstemmer==3.0.1
-    # via pydocstyle
+    # via edx-lint
 sqlparse==0.5.5
     # via django
 stevedore==5.7.0
@@ -188,9 +176,9 @@ tomli-w==1.2.0
 tomlkit==0.14.0
     # via pylint
 tox==4.52.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 twine==6.2.0
-    # via -r requirements/dev.in
+    # via -r dev.in
 urllib3==2.6.3
     # via
     #   id
@@ -199,4 +187,4 @@ urllib3==2.6.3
 virtualenv==21.2.0
     # via tox
 wheel==0.46.3
-    # via -r requirements/dev.in
+    # via -r dev.in
