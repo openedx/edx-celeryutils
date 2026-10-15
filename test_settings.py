@@ -41,7 +41,7 @@ INSTALLED_APPS = (
 )
 
 LOCALE_PATHS = [
-    root('celery_utils', 'conf', 'locale'),
+    root('src', 'celery_utils', 'conf', 'locale'),
 ]
 
 MIDDLEWARE = [

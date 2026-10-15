@@ -92,6 +92,7 @@ include-package-data = false
 readme = {file = ["README.rst", "CHANGELOG.rst"], content-type = "text/x-rst"}
 
 [tool.setuptools.packages.find]
+where = ["src"]
 include = ["celery_utils", "celery_utils.*"]
 exclude = ["*tests*"]
 

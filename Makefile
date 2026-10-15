@@ -46,7 +46,7 @@ requirements: ## install development environment requirements
 	uv sync --group dev
 
 test: clean ## run tests in the current virtualenv
-	py.test tests/ celery_utils/
+	py.test tests/ src/celery_utils/
 
 diff_cover: test
 	diff-cover coverage.xml

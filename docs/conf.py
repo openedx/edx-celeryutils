@@ -499,8 +499,8 @@ def on_init(app):  # pylint: disable=unused-argument
         # If we are, assemble the path manually
         bin_path = os.path.abspath(os.path.join(sys.prefix, 'bin'))
         apidoc_path = os.path.join(bin_path, apidoc_path)
-    check_call([apidoc_path, '-o', docs_path, os.path.join(root_path, 'celery_utils'),
-                os.path.join(root_path, 'celery_utils/migrations')])
+    check_call([apidoc_path, '-o', docs_path, os.path.join(root_path, 'src', 'celery_utils'),
+                os.path.join(root_path, 'src', 'celery_utils', 'migrations')])
 
 
 def setup(app):
