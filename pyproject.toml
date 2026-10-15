@@ -39,6 +39,52 @@ dependencies = [
 Homepage = "https://github.com/openedx/edx-celeryutils"
 Repository = "https://github.com/openedx/edx-celeryutils"
 
+[dependency-groups]
+test-base = [
+    "ddt",
+    "freezegun",
+    "mock",
+    "pytest-cov",
+    "pytest-django",
+    "python-memcached",
+]
+test = [
+    {include-group = "test-base"},
+    "Django>=5.2,<6.0",
+]
+django42 = [
+    {include-group = "test-base"},
+    "Django>=4.2,<4.3",
+]
+quality = [
+    {include-group = "test"},
+    "edx-lint",
+    "isort",
+    "pycodestyle",
+    "pydocstyle==3.0.0",
+]
+doc = [
+    {include-group = "test"},
+    "doc8",
+    "sphinx-book-theme",
+    "build",
+    "twine",
+    "Sphinx",
+    "sphinxcontrib-napoleon",
+]
+ci = [
+    "tox",
+    "tox-uv",
+]
+dev = [
+    {include-group = "quality"},
+    {include-group = "doc"},
+    {include-group = "ci"},
+    "diff-cover",
+    "edx-i18n-tools",
+    "wheel",
+]
+
 [tool.setuptools]
 include-package-data = false
 
@@ -52,6 +98,32 @@ exclude = ["*tests*"]
 [tool.setuptools_scm]
 version_scheme = "only-version"
 local_scheme = "no-local-version"
+
+[tool.uv]
+package = true
+default-groups = []
+conflicts = [
+    [{group = "test"}, {group = "django42"}],
+    [{group = "quality"}, {group = "django42"}],
+    [{group = "doc"}, {group = "django42"}],
+    [{group = "dev"}, {group = "django42"}],
+]
+
+#  DO NOT EDIT constraint-dependencies DIRECTLY.
+#  This list is managed by `edx_lint write_uv_constraints`
+#  and will be overwritten the next time `make upgrade` is run.
+#  - GLOBAL constraints: edit edx_lint/files/common_constraints.txt
+#  - REPO-SPECIFIC constraints: edit [tool.edx_lint].uv_constraints in this file
+constraint-dependencies = [
+    "Django<6.0",
+    "elasticsearch<7.14.0",
+    "social-auth-app-django<6.0.0",
+    "social-auth-core<5.0.0",
+    "pip<26.2.1",
+]
+
+[tool.edx_lint]
+uv_constraints = []
 
 [tool.isort]
 line_length = 120

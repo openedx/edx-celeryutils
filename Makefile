@@ -35,44 +35,15 @@ docs: ## generate Sphinx HTML documentation, including API docs
 	tox -e docs
 	$(BROWSER) docs/_build/html/index.html
 
-COMMON_CONSTRAINTS_TXT=requirements/common_constraints.txt
-.PHONY: $(COMMON_CONSTRAINTS_TXT)
-$(COMMON_CONSTRAINTS_TXT):
-	wget -O "$(@)" https://raw.githubusercontent.com/edx/edx-lint/master/edx_lint/files/common_constraints.txt || touch "$(@)"
-
-upgrade: export CUSTOM_COMPILE_COMMAND=make upgrade
-upgrade: $(COMMON_CONSTRAINTS_TXT)
-	## update the requirements/*.txt files with the latest packages satisfying requirements/*.in
-	pip install -qr requirements/pip-tools.txt
-	pip-compile --upgrade  --allow-unsafe --rebuild -o requirements/pip.txt requirements/pip.in
-	pip-compile --rebuild  --upgrade -o requirements/pip-tools.txt requirements/pip-tools.in
-	pip install -qr requirements/pip.txt
-	pip install -qr requirements/pip-tools.txt
-	pip-compile --rebuild  --upgrade -o requirements/base.txt requirements/base.in
-	pip-compile --rebuild  --upgrade -o requirements/dev.txt requirements/dev.in requirements/quality.in
-	pip-compile --rebuild  --upgrade -o requirements/doc.txt requirements/base.in requirements/doc.in
-	pip-compile --rebuild  --upgrade -o requirements/quality.txt requirements/quality.in
-	pip-compile --rebuild  --upgrade -o requirements/test.txt requirements/base.in requirements/test.in
-	pip-compile --rebuild  --upgrade -o requirements/ci.txt requirements/ci.in
-	# Let tox control the Django version for tests
-	grep -e "^amqp==\|^anyjson==\|^billiard==\|^celery==\|^kombu==\|^click-didyoumean==\|^click-repl==\|^click==\|^prompt-toolkit==\|^vine==" requirements/base.txt > requirements/celery50.txt
-	sed -i.tmp '/^[d|D]jango==/d' requirements/test.txt
-	sed -i.tmp '/^djangorestframework==/d' requirements/test.txt
-	sed -i.tmp '/^amqp==/d' requirements/test.txt
-	sed -i.tmp '/^anyjson==/d' requirements/test.txt
-	sed -i.tmp '/^billiard==/d' requirements/test.txt
-	sed -i.tmp '/^celery==/d' requirements/test.txt
-	sed -i.tmp '/^kombu==/d' requirements/test.txt
-	sed -i.tmp '/^vine==/d' requirements/test.txt
-	rm requirements/test.txt.tmp
+upgrade: ## update the uv lockfile with the latest packages satisfying pyproject.toml
+	uv run --with edx-lint edx_lint write_uv_constraints pyproject.toml
+	uv lock --upgrade
 
 quality: ## check coding style with pycodestyle and pylint
 	tox -e quality
 
 requirements: ## install development environment requirements
-	pip install -qr requirements/pip.txt
-	pip install -qr requirements/dev.txt --exists-action w
-	pip-sync requirements/base.txt requirements/dev.txt requirements/private.* requirements/test.txt
+	uv sync --group dev
 
 test: clean ## run tests in the current virtualenv
 	py.test tests/ celery_utils/
