@@ -1,9 +1,8 @@
-.. DEPRECATED: This changelog is no longer maintained. Release notes are
-   published only on the GitHub Releases page:
-   https://github.com/openedx/edx-celeryutils/releases
-
 Change Log
 ----------
+
+This changelog is no longer maintained. Release notes are published only on
+the `GitHub Releases page <https://github.com/openedx/edx-celeryutils/releases>`_.
 
 ..
    All enhancements and patches to edx-celeryutils will be documented
