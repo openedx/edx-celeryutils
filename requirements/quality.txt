@@ -20,10 +20,10 @@ code-annotations==3.0.0
 dill==0.4.1
     # via pylint
 edx-lint==6.0.0
-    # via -r requirements/quality.in
+    # via -r quality.in
 isort==8.0.1
     # via
-    #   -r requirements/quality.in
+    #   -r quality.in
     #   pylint
 jinja2==3.1.6
     # via code-annotations
@@ -34,10 +34,10 @@ mccabe==0.7.0
 platformdirs==4.9.4
     # via pylint
 pycodestyle==2.14.0
-    # via -r requirements/quality.in
+    # via -r quality.in
 pydocstyle==3.0.0
-    # via -r requirements/quality.in
-pylint==4.0.5
+    # via -r quality.in
+pylint==4.0.9
     # via
     #   edx-lint
     #   pylint-celery
