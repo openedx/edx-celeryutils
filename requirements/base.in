@@ -1,8 +1,0 @@
-# Core requirements for using this application
-
--c constraints.txt
-
-celery
-Django >= 1.11
-django-model-utils
-jsonfield
