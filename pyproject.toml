@@ -58,7 +58,7 @@ django42 = [
 ]
 quality = [
     {include-group = "test"},
-    "edx-lint",
+    "edx-lint>=6.2",
     "isort",
     "pycodestyle",
     "pydocstyle==3.0.0",

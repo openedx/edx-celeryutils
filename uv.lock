@@ -760,7 +760,7 @@ dev = [
     { name = "django", specifier = ">=5.2,<6.0" },
     { name = "doc8" },
     { name = "edx-i18n-tools" },
-    { name = "edx-lint" },
+    { name = "edx-lint", specifier = ">=6.2" },
     { name = "freezegun" },
     { name = "isort" },
     { name = "mock" },
@@ -804,7 +804,7 @@ doc = [
 quality = [
     { name = "ddt" },
     { name = "django", specifier = ">=5.2,<6.0" },
-    { name = "edx-lint" },
+    { name = "edx-lint", specifier = ">=6.2" },
     { name = "freezegun" },
     { name = "isort" },
     { name = "mock" },
@@ -850,7 +850,7 @@ wheels = [
 
 [[package]]
 name = "edx-lint"
-version = "6.0.0"
+version = "6.3.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "click" },
@@ -860,10 +860,11 @@ dependencies = [
     { name = "pylint-celery" },
     { name = "pylint-django" },
     { name = "six" },
+    { name = "tomlkit" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/7a/b5/43614ee28105f436b5664fa0ead2ed6f74c125b732e030b7ceaa7f3e953f/edx_lint-6.0.0.tar.gz", hash = "sha256:078e6f3a5d54f295a43c6db59f7fdc373e139aa1bda8b7ce02fb53e15296675b", size = 48460, upload-time = "2026-03-12T18:00:53.047Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/aa/f9/4dd88acbbe9e1fc1c72db5375198e109e8b14544b5bb03a1981b40d42982/edx_lint-6.3.1.tar.gz", hash = "sha256:f85ef5ce11380441b26597d7099ac47c0d03f60eb302b2296d92518b4e0bfefd", size = 98444, upload-time = "2026-11-16T15:03:50.564Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d8/fd/f3fbb21bb2ac75dbacbbd8a9afbffc093b09d51128ec80def128761b19b4/edx_lint-6.0.0-py3-none-any.whl", hash = "sha256:5eab30bf1beb6f678b973151b9c0add0efbd758ef33f3df52e687dc48b2c0024", size = 56807, upload-time = "2026-03-12T18:00:51.866Z" },
+    { url = "https://files.pythonhosted.org/packages/71/ec/d846a8f5195c79577f55813a5fa0de3cee155c30b842ffebd9918bc9a23f/edx_lint-6.3.1-py3-none-any.whl", hash = "sha256:5899110232093c20911a3f057d7282adf16573fe5db28a9ced43126011732db4", size = 51075, upload-time = "2026-11-16T15:03:49.014Z" },
 ]
 
 [[package]]
